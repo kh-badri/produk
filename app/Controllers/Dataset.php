@@ -2,118 +2,228 @@
 
 namespace App\Controllers;
 
-use App\Models\PropertiModel;
+use App\Controllers\BaseController;
+use App\Models\DatasetModel;
+use CodeIgniter\Exceptions\PageNotFoundException;
 
 class Dataset extends BaseController
 {
-    // Fungsi ini HANYA untuk menampilkan halaman
+    protected $datasetModel;
+
+    public function __construct()
+    {
+        // Inisialisasi Model di constructor agar bisa dipakai di semua method
+        $this->datasetModel = new DatasetModel();
+    }
+
+    /**
+     * Menampilkan halaman utama dataset dengan semua data.
+     */
     public function index()
     {
         $data = [
-            'active_menu' => 'dataset'
+            'title'   => 'Manajemen Data Latih (Dataset)',
+            'dataset' => $this->datasetModel->findAll(), // Ambil semua data
         ];
 
-        $propertiModel = new PropertiModel();
-        $data['properti'] = $propertiModel->getPropertiWithKriteria();
-
-        // Mengambil pesan flash dari session jika ada (setelah proses upload)
-        $data['success'] = session()->getFlashdata('success');
-        $data['error'] = session()->getFlashdata('error');
-
-        return view('dataset/index', $data);
+        return view('dataset/index', $data); // Pastikan view ada di 'app/Views/dataset/index.php'
     }
 
-    // Fungsi ini HANYA untuk memproses file upload
-    public function upload()
+    /**
+     * Menyimpan data baru dari form manual.
+     */
+    public function save()
     {
-        // 1. Validasi file yang diupload
-        $file = $this->request->getFile('dataset_csv');
-        if (!$file->isValid() || $file->getExtension() !== 'csv') {
-            return redirect()->to('/dataset')->with('error', 'File tidak valid! Harap unggah file dengan format .csv');
+        // Validasi input
+        $rules = [
+            'durasi_layar'   => 'required|numeric',
+            'durasi_sosmed'  => 'required|numeric',
+            'durasi_tidur'   => 'required|numeric',
+            'resiko_depresi' => 'required|in_list[Rendah,Sedang,Tinggi]',
+        ];
+
+        if (!$this->validate($rules)) {
+            // Jika validasi gagal, kembalikan dengan pesan error
+            return redirect()->to('/dataset')->withInput()->with('error', 'Validasi gagal, mohon periksa kembali input Anda.');
         }
 
-        // Buka file CSV untuk dibaca
-        $handle = fopen($file->getTempName(), "r");
+        // Simpan data ke database menggunakan model
+        $this->datasetModel->save([
+            'durasi_layar'   => $this->request->getPost('durasi_layar'),
+            'durasi_sosmed'  => $this->request->getPost('durasi_sosmed'),
+            'durasi_tidur'   => $this->request->getPost('durasi_tidur'),
+            'resiko_depresi' => $this->request->getPost('resiko_depresi'),
+        ]);
 
-        // Lewati baris header
-        fgetcsv($handle, 1000, ",");
+        return redirect()->to('/dataset')->with('success', 'Data berhasil ditambahkan!');
+    }
 
-        // Dapatkan koneksi database
-        $db = \Config\Database::connect();
-        $kriteriaModel = new \App\Models\KriteriaModel(); // Kita butuh model ini
+    /**
+     * Memproses file CSV yang di-upload dan menyimpannya ke database.
+     */
+    public function upload()
+    {
+        // 1. Validasi File
+        $validationRule = [
+            'dataset_csv' => [
+                'label' => 'File CSV',
+                'rules' => 'uploaded[dataset_csv]'
+                    . '|ext_in[dataset_csv,csv]'
+                    . '|max_size[dataset_csv,2048]', // max 2MB
+            ],
+        ];
 
-        $db->transStart(); // Mulai transaksi untuk memastikan semua data masuk atau tidak sama sekali
+        if (!$this->validate($validationRule)) {
+            return redirect()->to('/dataset')->withInput()->with('error', $this->validator->getErrors()['dataset_csv']);
+        }
 
-        // 2. Baca file baris per baris
-        while (($row = fgetcsv($handle, 1000, ",")) !== FALSE) {
-            // Asumsi urutan kolom di CSV:
-            // 0: Lokasi, 1: Jenis_Tanah, 2: Jenis_Properti, 3: Luas_Tanah, 4: Jarak_Ke_Pusat, 5: Fasilitas_Sekitar
-            $nama_properti_baru = "Properti " . ($db->table('properti')->countAllResults() + 1);
+        $file = $this->request->getFile('dataset_csv');
 
-            // 3. Masukkan ke tabel `properti` dan dapatkan ID-nya
-            $db->table('properti')->insert(['nama_properti' => $nama_properti_baru]);
-            $propertiId = $db->insertID();
+        // Cek apakah file valid dan benar-benar bisa dibaca sebelum diproses
+        if (!$file->isValid() || $file->hasMoved()) {
+            return redirect()->to('/dataset')->with('error', 'Terjadi masalah saat mengupload file.');
+        }
 
-            // 4. Proses setiap atribut (6 kolom)
-            $kategori = ['Lokasi', 'Jenis_Tanah', 'Jenis_Properti', 'Luas_Tanah', 'Jarak_Ke_Pusat_Kota', 'Fasilitas_Sekitar'];
-            for ($i = 0; $i < count($kategori); $i++) {
-                $nilai = $row[$i];
+        // 2. Baca file CSV dengan lebih aman
+        $filePath = $file->getRealPath();
+        if ($filePath === false) {
+            return redirect()->to('/dataset')->with('error', 'Gagal mendapatkan path file sementara.');
+        }
 
-                // Cari ID kriteria di tabel `kriteria`
-                $kriteria = $db->table('kriteria')->where(['kategori' => $kategori[$i], 'nilai' => $nilai])->get()->getRow();
+        $fileContent = file($filePath);
+        if ($fileContent === false) {
+            return redirect()->to('/dataset')->with('error', 'Gagal membaca isi file CSV.');
+        }
+        $csvData = array_map('str_getcsv', $fileContent);
 
-                if ($kriteria) {
-                    $kriteriaId = $kriteria->id;
-                } else {
-                    // Jika tidak ada, buat baru dan dapatkan ID-nya
-                    $db->table('kriteria')->insert(['kategori' => $kategori[$i], 'nilai' => $nilai]);
-                    $kriteriaId = $db->insertID();
-                }
+        // Hapus baris header
+        array_shift($csvData);
 
-                // 5. Masukkan ke tabel `transaksi_properti`
-                $db->table('transaksi_properti')->insert([
-                    'id_properti' => $propertiId,
-                    'id_kriteria' => $kriteriaId
-                ]);
+        $dataToInsert = [];
+        $insertedCount = 0;
+
+        // 3. Looping setiap baris data
+        foreach ($csvData as $row) {
+            // Pastikan baris tidak kosong untuk menghindari error
+            if (empty($row) || empty($row[0])) {
+                continue;
+            }
+
+            // PENTING: Sesuaikan indeks [ ] dengan urutan kolom di file CSV Anda
+            // Asumsi struktur CSV: user_id,age,gender,durasi_layar,durasi_sosmed,durasi_tidur,resiko_depresi
+            $dataToInsert[] = [
+                'durasi_layar'   => (float) ($row[3] ?? 0),
+                'durasi_sosmed'  => (float) ($row[4] ?? 0),
+                'durasi_tidur'   => (float) ($row[5] ?? 0),
+                'resiko_depresi' => trim($row[6] ?? 'Rendah'),
+            ];
+        }
+
+        // 4. Simpan data secara massal (batch insert) jika ada data yang akan dimasukkan
+        if (!empty($dataToInsert)) {
+            try {
+                $insertedCount = $this->datasetModel->insertBatch($dataToInsert);
+            } catch (\Exception $e) {
+                // Tangkap jika ada error dari database
+                return redirect()->to('/dataset')->with('error', 'Terjadi error saat menyimpan ke database: ' . $e->getMessage());
             }
         }
 
-        fclose($handle);
-        $db->transComplete(); // Selesaikan transaksi
-
-        if ($db->transStatus() === FALSE) {
-            return redirect()->to('/dataset')->with('error', 'Gagal mengimpor dataset ke database.');
-        } else {
-            return redirect()->to('/dataset')->with('success', 'Dataset berhasil diimpor!');
-        }
+        return redirect()->to('/dataset')->with('success', "Upload selesai! {$insertedCount} baris data baru berhasil diimpor.");
     }
+
+    /**
+     * Menghapus semua data dari tabel dataset.
+     */
+    /**
+     * Menghapus semua data dari tabel dataset.
+     */
+    /**
+     * Menghapus semua data dari tabel dataset.
+     */
     public function hapusSemua()
     {
-        $db = \Config\Database::connect();
+        // Terima POST atau DELETE method
+        $method = strtolower($this->request->getMethod());
 
-        // 1. Matikan sementara pemeriksaan foreign key
-        $db->query('SET FOREIGN_KEY_CHECKS = 0');
-
-        // 2. Mulai transaksi database
-        $db->transStart();
-
-        // 3. Lakukan proses truncate pada setiap tabel
-        $db->table('transaksi_properti')->truncate();
-        $db->table('properti')->truncate();
-        $db->table('kriteria')->truncate();
-
-        // 4. Selesaikan transaksi
-        $db->transComplete();
-
-        // 5. Aktifkan kembali pemeriksaan foreign key setelah selesai
-        $db->query('SET FOREIGN_KEY_CHECKS = 1');
-
-        if ($db->transStatus() === false) {
-            // Jika terjadi error, kirim pesan gagal
-            return redirect()->to(site_url('dataset'))->with('error', 'Gagal menghapus dataset.');
-        } else {
-            // Jika berhasil, kirim pesan sukses
-            return redirect()->to(site_url('dataset'))->with('success', 'Seluruh dataset berhasil dihapus.');
+        // Jika bukan POST/DELETE, coba cek apakah ada method spoofing
+        if (!in_array($method, ['post', 'delete'])) {
+            // Cek _method dari form (method spoofing CI4)
+            $spoofedMethod = strtolower($this->request->getPost('_method') ?? '');
+            if (!in_array($spoofedMethod, ['post', 'delete'])) {
+                log_message('debug', 'hapusSemua - Method tidak valid: ' . $method);
+                return redirect()->to('/dataset')->with('error', 'Akses tidak diizinkan.');
+            }
         }
+
+        try {
+            // Ambil nama tabel dari model
+            $tableName = $this->datasetModel->table;
+
+            // Cek jumlah data sebelum dihapus
+            $countBefore = $this->datasetModel->countAllResults(false);
+
+            if ($countBefore == 0) {
+                return redirect()->to('/dataset')->with('info', 'Tidak ada data untuk dihapus.');
+            }
+
+            // Metode 1: Menggunakan emptyTable() - paling efektif untuk menghapus semua data
+            $this->datasetModel->emptyTable();
+
+            // Reset auto-increment
+            $this->datasetModel->db->query("ALTER TABLE {$tableName} AUTO_INCREMENT = 1");
+
+            return redirect()->to('/dataset')->with('success', "Semua data berhasil dihapus ({$countBefore} baris).");
+        } catch (\Exception $e) {
+            log_message('error', 'Error hapusSemua: ' . $e->getMessage());
+            return redirect()->to('/dataset')->with('error', 'Gagal menghapus data: ' . $e->getMessage());
+        }
+    }
+    /**
+     * Menghapus satu baris data berdasarkan ID.
+     */
+    public function delete($id = null)
+    {
+        // Gunakan method spoofing, jadi kita cek method DELETE
+        if ($this->request->getMethod() === 'delete') {
+            $dataset = $this->datasetModel->find($id);
+            if ($dataset) {
+                $this->datasetModel->delete($id);
+                return redirect()->to('/dataset')->with('success', 'Data berhasil dihapus.');
+            }
+            return redirect()->to('/dataset')->with('error', 'Data tidak ditemukan.');
+        }
+        // Redirect jika diakses dengan cara yang tidak seharusnya
+        return redirect()->to('/dataset')->with('error', 'Akses tidak diizinkan.');
+    }
+
+    /**
+     * Mengunduh semua data dari tabel sebagai file CSV.
+     */
+    public function export()
+    {
+        $data = $this->datasetModel->findAll();
+        $filename = 'export_dataset_' . date('Y-m-d') . '.csv';
+
+        // Set header untuk memicu download di browser
+        header("Content-Description: File Transfer");
+        header("Content-Disposition: attachment; filename=$filename");
+        header("Content-Type: application/csv; ");
+
+        // Buka output stream PHP untuk menulis file
+        $file = fopen('php://output', 'w');
+
+        // Tulis baris header
+        $header = ['id', 'durasi_layar', 'durasi_sosmed', 'durasi_tidur', 'resiko_depresi', 'created_at', 'updated_at'];
+        fputcsv($file, $header);
+
+        // Tulis data baris per baris
+        foreach ($data as $row) {
+            fputcsv($file, $row);
+        }
+
+        fclose($file);
+        // Hentikan eksekusi skrip agar tidak ada output lain yang tercetak
+        exit;
     }
 }

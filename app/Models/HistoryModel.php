@@ -6,13 +6,17 @@ use CodeIgniter\Model;
 
 class HistoryModel extends Model
 {
-    protected $table            = 'history_analisis';
+    protected $table            = 'history';
     protected $primaryKey       = 'id';
+    protected $useAutoIncrement = true;
     protected $allowedFields    = [
-        'min_support',
-        'min_confidence',
-        'min_lift',
-        'hasil_analisis',
-        'jumlah_aturan'
+        'durasi_layar',
+        'durasi_sosmed',
+        'durasi_tidur',
+        'k',
+        'hasil_klasifikasi'
     ];
+
+    // Mengaktifkan auto-timestamps
+    protected $useTimestamps = true;
 }

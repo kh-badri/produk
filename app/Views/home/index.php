@@ -1,124 +1,128 @@
 <?= $this->extend('layout/layout'); ?>
 <?= $this->section('content'); ?>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- 
+    CSS Kustom untuk animasi gambar naik-turun (float)
+-->
+<style>
+    @keyframes float {
+        0% {
+            transform: translateY(0px);
+        }
 
-<div class="container mx-auto p-6 lg:p-8" id="home-content">
+        50% {
+            transform: translateY(-20px);
+        }
 
-    <div class="mb-8 animate-fade-in-up">
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-800">
-            Selamat Datang Kembali, <span class="text-green-600"><?= esc(session()->get('username')) ?>!</span>
-        </h1>
-        <p class="text-gray-500 mt-2">Siap menemukan wawasan baru hari ini?</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-        <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-fade-in-up" style="animation-delay: 150ms;">
-            <div class="flex items-center">
-                <div class="p-4 bg-green-100 rounded-lg"><i class="fa-solid fa-database text-3xl text-green-600"></i></div>
-                <div class="ml-4">
-                    <p class="text-gray-500">Total Data Properti</p>
-                    <p id="count-properti" class="text-3xl font-bold text-gray-800">0</p>
-                </div>
-            </div>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-fade-in-up" style="animation-delay: 300ms;">
-            <div class="flex items-center">
-                <div class="p-4 bg-green-100 rounded-lg"><i class="fa-solid fa-tags text-3xl text-green-600"></i></div>
-                <div class="ml-4">
-                    <p class="text-gray-500">Total Atribut/Kriteria</p>
-                    <p id="count-kriteria" class="text-3xl font-bold text-gray-800">0</p>
-                </div>
-            </div>
-        </div>
-        <a href="<?= site_url('/analisis') ?>" class="block bg-green-600 p-6 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-fade-in-up" style="animation-delay: 450ms;">
-            <div class="flex items-center text-white h-full">
-                <div class="p-4 bg-green-500 rounded-lg"><i class="fa-solid fa-magnifying-glass-chart text-3xl"></i></div>
-                <div class="ml-4">
-                    <p class="font-bold text-xl">Mulai Analisis</p>
-                    <p class="text-green-100 text-sm">Temukan pola sekarang</p>
-                </div>
-            </div>
-        </a>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div class="lg:col-span-2 bg-white p-6 rounded-xl shadow-lg border border-gray-200 animate-fade-in-up" style="animation-delay: 600ms;">
-            <h2 class="text-xl font-bold text-gray-800 mb-4">Distribusi Properti Berdasarkan Lokasi</h2>
-            <div>
-                <canvas id="lokasiChart"></canvas>
-            </div>
-        </div>
-
-        <div class="space-y-6 animate-fade-in-up" style="animation-delay: 750ms;">
-            <h2 class="text-xl font-bold text-gray-800">Pintasan Cepat</h2>
-            <a href="<?= site_url('/dataset') ?>" class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl hover:border-green-500 hover:-translate-y-1 transition-all duration-300">
-                <div class="p-3 bg-green-100 rounded-lg"><i class="fa-solid fa-table text-2xl text-green-600"></i></div>
-                <div>
-                    <p class="font-semibold text-gray-800">Lihat & Kelola Dataset</p>
-                    <p class="text-sm text-gray-500">Impor atau hapus data</p>
-                </div>
-            </a>
-            <a href="<?= site_url('akun') ?>" class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl hover:border-green-500 hover:-translate-y-1 transition-all duration-300">
-                <div class="p-3 bg-green-100 rounded-lg"><i class="fa-solid fa-user-gear text-2xl text-green-600"></i></div>
-                <div>
-                    <p class="font-semibold text-gray-800">Pengaturan Akun</p>
-                    <p class="text-sm text-gray-500">Ubah profil & password</p>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-
-<script>
-    // Fungsi animasi hitung angka (tetap sama)
-    function animateValue(obj, start, end, duration) {
-        let startTimestamp = null;
-        const step = (timestamp) => {
-            if (!startTimestamp) startTimestamp = timestamp;
-            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-            obj.innerHTML = Math.floor(progress * (end - start) + start);
-            if (progress < 1) window.requestAnimationFrame(step);
-        };
-        window.requestAnimationFrame(step);
+        100% {
+            transform: translateY(0px);
+        }
     }
 
-    // Eksekusi setelah halaman dimuat
-    document.addEventListener("DOMContentLoaded", () => {
-        // Animasi hitung
-        const countProperti = document.getElementById('count-properti');
-        const countKriteria = document.getElementById('count-kriteria');
-        animateValue(countProperti, 0, <?= $total_properti ?>, 1500);
-        animateValue(countKriteria, 0, <?= $total_kriteria ?>, 1500);
+    .animate-float {
+        /* Menerapkan animasi float dengan durasi 6 detik, pergerakan halus, dan berulang tanpa henti */
+        animation: float 6s ease-in-out infinite;
+    }
+</style>
 
-        // Inisialisasi Grafik
-        const ctx = document.getElementById('lokasiChart').getContext('2d');
-        const lokasiChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: <?= $chart_labels ?>,
-                datasets: [{
-                    label: 'Jumlah Properti',
-                    data: <?= $chart_data ?>,
-                    backgroundColor: 'rgba(22, 163, 74, 0.7)', // Warna hijau dengan transparansi
-                    borderColor: 'rgba(22, 163, 74, 1)',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                },
-                plugins: {
-                    legend: {
-                        display: false // Sembunyikan legenda
-                    }
-                }
-            }
-        });
-    });
-</script>
+<div class="container mx-auto px-4 lg:px-8 py-8 text-gray-100 overflow-x-hidden">
+
+    <!-- ======================= -->
+    <!-- Hero Section -->
+    <!-- ======================= -->
+    <section class="py-16 md:py-24">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Kolom Teks -->
+            <div>
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight">
+                        Memahami Resiko Depresi di Era Digital
+                    </h1>
+                    <p class="mt-4 text-lg md:text-xl text-teal-300 max-w-2xl">
+                        Sebuah alat bantu berbasis <span class="font-bold">K-Nearest Neighbor (KNN)</span> untuk meningkatkan kesadaran diri terhadap kesehatan mental.
+                    </p>
+                    <a href="<?= base_url('/klasifikasi') ?>" class="mt-8 inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg text-lg transform hover:scale-105">
+                        Mulai Klasifikasi
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kolom Gambar dengan Animasi -->
+            <div>
+                <div class="flex justify-center items-center">
+                    <!-- Gambar Anda dengan animasi float -->
+                    <img src="<?= base_url('public/depresi.png') ?>" alt="Ilustrasi Kesehatan Mental" class="w-full max-w-sm md:max-w-md animate-float">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Proyek Section -->
+    <section class="py-16">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="flex justify-center items-center">
+                <div class="rounded-lg shadow-xl">
+                    <img src="<?= base_url('public/kesadaran.png') ?>" alt="Kesadaran Diri" class="rounded-lg object-cover w-[200px] h-[200px]">
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-teal-400 mb-4">Pentingnya Kesadaran Diri</h2>
+                <p class="text-gray-300 mb-4 leading-relaxed">
+                    Aplikasi ini bukan alat diagnosis. Tujuannya adalah untuk menjadi cermin, membantu Anda merefleksikan bagaimana pola hidup digital—seperti durasi menatap layar dan waktu tidur—berpotensi memengaruhi kondisi emosional Anda.
+                </p>
+                <p class="text-gray-300 leading-relaxed">
+                    Dengan meningkatkan kesadaran, kita bisa mengambil langkah-langkah kecil untuk membangun kebiasaan digital yang lebih sehat dan seimbang.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metode KNN Section -->
+    <section class="py-16 text-center">
+        <div>
+            <h2 class="text-3xl font-bold text-teal-400 mb-4">Bagaimana Cara Kerjanya?</h2>
+            <p class="text-gray-300 max-w-3xl mx-auto mb-12">
+                Aplikasi ini menggunakan metode K-Nearest Neighbor (KNN), sebuah algoritma klasifikasi yang sederhana namun kuat. Cara kerjanya didasarkan pada asumsi bahwa data yang mirip akan memiliki hasil yang mirip.
+            </p>
+        </div>
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Step 1 -->
+            <div class="bg-slate-800 p-8 rounded-lg shadow-xl hover:shadow-teal-500/20 hover:-translate-y-2 transition-all duration-300">
+                <div class="text-teal-400 mb-4"><i class="fa-solid fa-ruler-combined text-5xl"></i></div>
+                <h3 class="text-xl font-bold mb-2">1. Hitung Jarak</h3>
+                <p class="text-gray-400">Data baru Anda akan dihitung jaraknya ke semua data di dataset menggunakan Jarak Euclidean.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="bg-slate-800 p-8 rounded-lg shadow-xl hover:shadow-teal-500/20 hover:-translate-y-2 transition-all duration-300">
+                <div class="text-teal-400 mb-4"><i class="fa-solid fa-users-viewfinder text-5xl"></i></div>
+                <h3 class="text-xl font-bold mb-2">2. Cari Tetangga</h3>
+                <p class="text-gray-400">Sistem akan menemukan 'K' data terdekat dari data Anda untuk perbandingan.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="bg-slate-800 p-8 rounded-lg shadow-xl hover:shadow-teal-500/20 hover:-translate-y-2 transition-all duration-300">
+                <div class="text-teal-400 mb-4"><i class="fa-solid fa-check-to-slot text-5xl"></i></div>
+                <h3 class="text-xl font-bold mb-2">3. Lakukan Voting</h3>
+                <p class="text-gray-400">Klasifikasi dengan suara terbanyak dari tetangga akan menjadi hasil prediksi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="py-16">
+        <div>
+            <div class="bg-slate-800/50 border border-yellow-500/30 rounded-lg shadow-2xl text-center p-8 md:p-12">
+                <div class="text-yellow-400 mb-4">
+                    <i class="fa-solid fa-triangle-exclamation text-4xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Penting Untuk Diingat</h2>
+                <p class="text-gray-300 max-w-3xl mx-auto">
+                    Hasil dari aplikasi ini bersifat prediktif dan edukatif, bukan merupakan diagnosis medis. Jika Anda merasa mengalami gejala depresi atau masalah kesehatan mental lainnya, sangat disarankan untuk berkonsultasi dengan profesional seperti psikolog atau psikiater.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</div>
 
 <?= $this->endSection(); ?>
