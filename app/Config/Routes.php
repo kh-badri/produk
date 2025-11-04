@@ -24,18 +24,23 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->post('dataset/save', 'Dataset::save');       // Untuk form tambah manual
     $routes->post('dataset/upload', 'Dataset::upload');   // Untuk form upload CSV
     $routes->get('dataset/export', 'Dataset::export');    // Untuk tombol export
-    $routes->post('dataset/hapusSemua', 'Dataset::hapusSemua'); // Untuk tombol hapus semua
-    $routes->get('/dataset/delete/(:num)', 'Dataset::delete/$1');
+    $routes->delete('dataset/hapusSemua', 'Dataset::hapusSemua');   
+    $routes->delete('dataset/delete/(:num)', 'Dataset::delete/$1');
 
-    $routes->get('/klasifikasi', 'Klasifikasi::index');
-    $routes->post('/klasifikasi/proses', 'Klasifikasi::proses');
-    $routes->post('/klasifikasi/simpan', 'Klasifikasi::simpan');
+$routes->get('analisis', 'Analisis::index');
+$routes->post('analisis/proses', 'Analisis::proses');
+
+// --- RUTE BARU DI BAWAH INI ---
+$routes->post('analisis/simpan', 'Analisis::simpan'); // Untuk tombol simpan
+
+// Rute untuk Halaman History
+$routes->get('history', 'History::index');
+$routes->get('history/delete/(:num)', 'History::delete/$1'); // Hapus pakai method GET agar form-nya mudah
+$routes->get('history/detail/(:num)', 'History::detail/$1');
 
     // ... (kode routes lainnya)
 
-    // --- RUTE UNTUK HISTORY ---
-    $routes->get('/history', 'History::index');
-    $routes->get('/history/delete/(:num)', 'History::delete/$1');
+
 });
 
 

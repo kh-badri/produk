@@ -1,151 +1,217 @@
+<?php helper('form'); ?>
 <?= $this->extend('layout/layout'); ?>
 <?= $this->section('content'); ?>
 
-<div class="container mx-auto p-4 lg:p-8 text-gray-400">
+<!-- Latar belakang: #FFE1AF (Krem) - WARNA SOLID -->
+<div class="min-h-screen bg-[#FFE1AF] py-8 px-4">
+    <div class="container mx-auto max-w-7xl relative z-10">
 
-    <h1 class="text-3xl font-bold mb-6 text-teal-700">Manajemen Dataset</h1>
-
-    <!-- Notifikasi (Digabung menjadi satu blok) -->
-    <?php if (session()->getFlashdata('success') || session()->getFlashdata('error')) : ?>
-        <?php $isError = session()->getFlashdata('error'); ?>
-        <div class="<?= $isError ? 'bg-red-500 border-red-700' : 'bg-teal-500 border-teal-700' ?> border-l-4 text-white p-4 mb-6 rounded-md shadow-lg" role="alert">
-            <p class="font-bold"><?= $isError ? 'Error' : 'Sukses' ?></p>
-            <p><?= $isError ?: session()->getFlashdata('success') ?></p>
+        <!-- Header (Solid Putih) -->
+        <div class="bg-white rounded-2xl p-6 mb-6 shadow-xl border border-gray-200">
+            <div class="flex items-center gap-4">
+                <!-- Ikon Header (Solid Terracotta) -->
+                <div class="p-3 bg-[#B77466] rounded-xl shadow-md">
+                    <img src="<?= base_url('public/data.png') ?>" alt="Dataset" class="w-12 h-12"
+                         onerror="this.src='https://placehold.co/32x32/FFFFFF/B77466?text=DB'; this.onerror=null;">
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-[#957C62]">Manajemen Dataset</h1>
+                    <p class="text-[#957C62]/70">Kelola data penjualan produk untuk analisis</p>
+                </div>
+            </div>
         </div>
-    <?php endif; ?>
 
-    <!-- Bagian Aksi Cepat -->
-    <div class="bg-slate-800 p-6 rounded-lg shadow-xl mb-8">
-        <h2 class="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">Aksi Cepat</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-            <!-- Form Impor CSV -->
-            <form action="<?= base_url('dataset/upload') ?>" method="post" enctype="multipart/form-data" class="flex flex-col space-y-3">
-                <?= csrf_field() ?>
-                <label for="dataset_csv" class="font-medium">Impor dari CSV:</label>
-                <input type="file" name="dataset_csv" id="dataset_csv" required class="block w-full text-sm text-gray-400
-                    file:mr-4 file:py-2 file:px-4
-                    file:rounded-full file:border-0
-                    file:text-sm file:font-semibold
-                    file:bg-teal-100 file:text-teal-700
-                    hover:file:bg-teal-200 transition">
-                <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-md">
-                    Upload & Simpan
-                </button>
-            </form>
-
-            <!-- Tombol Ekspor -->
-            <div class="flex flex-col space-y-3 justify-end">
-                <label class="font-medium">Ekspor ke CSV:</label>
-                <a href="<?= base_url('dataset/export') ?>" class="w-full text-center bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-md">
-                    Download Dataset
-                </a>
+        <!-- Action Cards (Solid Putih) -->
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+            
+            <!-- Upload CSV -->
+            <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-lg">
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="<?= base_url('public/images/icon_upload.png') ?>" alt="Upload" class="w-6 h-6"
+                         onerror="this.style.display='none'">
+                    <h3 class="font-bold text-lg text-[#957C62]">Impor CSV</h3>
+                </div>
+                <form action="<?= base_url('dataset/upload') ?>" method="post" enctype="multipart/form-data" class="space-y-3">
+                    <?= csrf_field() ?>
+                    <input type="file" name="dataset_csv" required
+                           class="block w-full text-sm text-[#957C62] file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:font-semibold file:bg-[#B77466] file:text-white hover:file:bg-[#957C62] transition cursor-pointer">
+                    <!-- Tombol Solid (TANPA GRADIENT) -->
+                    <button type="submit"
+                            class="w-full bg-[#B77466] hover:bg-[#957C62] text-white font-semibold py-2.5 rounded-lg transition-all transform hover:scale-105 shadow-md">
+                        Upload & Ganti Data
+                    </button>
+                </form>
             </div>
 
-            <!-- Form Hapus Semua Data -->
-            <div class="flex flex-col space-y-3 justify-end">
-                <label class="font-medium">Hapus Semua Data:</label>
-                <form action="<?= base_url('dataset/hapusSemua') ?>" method="post" onsubmit="return confirm('PERINGATAN! Anda yakin ingin menghapus semua data secara permanen? Aksi ini tidak dapat dibatalkan.');">
+            <!-- Delete All -->
+            <div class="bg-white p-6 rounded-xl border border-red-200 shadow-lg">
+                <div class="flex items-center gap-3 mb-2">
+                    <img src="<?= base_url('public/images/icon_delete.png') ?>" alt="Hapus" class="w-6 h-6"
+                         onerror="this.style.display='none'">
+                    <h3 class="font-bold text-lg text-red-700">Hapus Semua Data</h3>
+                </div>
+                <p class="text-sm text-gray-600 mb-4">Menghapus seluruh dataset secara permanen.</p>
+                <form action="<?= base_url('dataset/hapusSemua') ?>" method="post" onsubmit="return confirm('PERINGATAN! Semua data akan dihapus permanen. Yakin?');">
                     <?= csrf_field() ?>
-                    <button type="submit" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-md">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2.5 rounded-lg transition-all transform hover:scale-105 shadow-md">
                         Hapus Semua
                     </button>
                 </form>
             </div>
         </div>
-    </div>
 
-    <!-- Form Tambah Data Manual -->
-    <div class="bg-slate-800 p-6 rounded-lg shadow-xl mb-8">
-        <h2 class="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">Tambah Data Manual</h2>
-        <form action="<?= base_url('dataset/save') ?>" method="post">
-            <?= csrf_field() ?>
-            <!-- Layout responsif untuk form input -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                <div class="sm:col-span-1">
-                    <label for="durasi_layar" class="block mb-2 text-sm font-medium text-gray-300">Durasi Layar (jam)</label>
-                    <input type="number" step="0.1" name="durasi_layar" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5" required>
-                </div>
-                <div class="sm:col-span-1">
-                    <label for="durasi_sosmed" class="block mb-2 text-sm font-medium text-gray-300">Durasi Sosmed (jam)</label>
-                    <input type="number" step="0.1" name="durasi_sosmed" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5" required>
-                </div>
-                <div class="sm:col-span-1">
-                    <label for="durasi_tidur" class="block mb-2 text-sm font-medium text-gray-300">Durasi Tidur (jam)</label>
-                    <input type="number" step="0.1" name="durasi_tidur" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5" required>
-                </div>
-                <div class="sm:col-span-1">
-                    <label for="resiko_depresi" class="block mb-2 text-sm font-medium text-gray-300">Resiko Depresi</label>
-                    <select name="resiko_depresi" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5" required>
-                        <option value="">-- Pilih --</option>
-                        <option value="Rendah">Rendah</option>
-                        <option value="Sedang">Sedang</option>
-                        <option value="Tinggi">Tinggi</option>
-                    </select>
-                </div>
-                <!-- Tombol diatur agar selalu di paling bawah dan full width di mobile -->
-                <div class="sm:col-span-2 lg:col-span-1 flex items-end">
-                    <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-2.5 px-4 rounded-lg transition duration-300 shadow-md">
-                        Simpan
-                    </button>
+        <!-- Main Grid -->
+        <div class="grid lg:grid-cols-3 gap-6">
+
+            <!-- Table (Solid Putih) -->
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-xl shadow-xl border border-gray-200 overflow-hidden">
+                    <!-- Header Tabel (Solid Coklat Muted) -->
+                    <div class="p-5 bg-[#957C62] flex justify-between items-center">
+                        <h2 class="text-lg font-bold text-white flex items-center gap-3">
+                            <img src="<?= base_url('public/images/icon_table.png') ?>" alt="Tabel" class="w-5 h-5"
+                                 onerror="this.style.display='none'">
+                            Data Penjualan
+                        </h2>
+                        <span class="px-3 py-1 bg-[#FFE1AF]/30 rounded-full text-sm text-white font-semibold">
+                            Total: <?= (!empty($dataset) && is_array($dataset)) ? count($dataset) : 0 ?>
+                        </span>
+                    </div>
+
+                    <!-- Wrapper Tabel (Teks Jelas) -->
+                    <div class="overflow-x-auto max-h-[600px] overflow-y-auto">
+                        <table class="w-full text-sm">
+                            <!-- Header Tabel (Teks Jelas) -->
+                            <thead class="sticky top-0 bg-gray-100 text-[#957C62] text-xs uppercase z-10">
+                                <tr>
+                                    <th class="px-3 py-3 text-left">ID</th>
+                                    <th class="px-3 py-3 text-left">Waktu</th>
+                                    <th class="px-3 py-3 text-left">Produk</th>
+                                    <th class="px-3 py-3 text-left">Kategori</th>
+                                    <th class="px-3 py-3 text-left">Harga</th>
+                                    <th class="px-3 py-3 text-left">Terjual</th>
+                                    <th class="px-3 py-3 text-left">Promosi</th>
+                                    <th class="px-3 py-3 text-left">Penurunan</th>
+                                    <th class="px-3 py-3 text-center">Aksi</th>
+                                </tr>
+                            </thead>
+                            <!-- Body Tabel (Teks Jelas) -->
+                            <tbody class="text-gray-800">
+                                <?php if (empty($dataset)) : ?>
+                                    <tr>
+                                        <td colspan="9" class="px-6 py-8 text-center text-gray-500">
+                                            <img src="<?= base_url('public/images/icon_empty.png') ?>" alt="Kosong" class="w-16 h-16 mx-auto mb-3 text-gray-300"
+                                                 onerror="this.src='https://placehold.co/64x64/F3F4F6/9CA3AF?text=Empty'; this.onerror=null;">
+                                            Belum ada data. Tambah manual atau upload CSV.
+                                        </td>
+                                    </tr>
+                                <?php else : ?>
+                                    <?php foreach ($dataset as $i => $row) : ?>
+                                        <tr class="<?= ($i % 2 == 0) ? 'bg-white' : 'bg-gray-50' ?> border-b border-gray-200 hover:bg-[#FFE1AF]/40 transition">
+                                            <td class="px-3 py-2 font-medium text-[#B77466]"><?= $row['id'] ?></td>
+                                            <td class="px-3 py-2 text-gray-700 whitespace-nowrap"><?= date('d/m/y', strtotime($row['waktu_penjualan'])) ?></td>
+                                            <td class="px-3 py-2 text-gray-900 font-medium whitespace-nowrap"><?= esc($row['nama_produk']) ?></td>
+                                            <td class="px-3 py-2 text-gray-600 whitespace-nowrap"><?= esc($row['kategori_produk']) ?></td>
+                                            <td class="px-3 py-2 text-gray-700 whitespace-nowrap"><?= number_format($row['harga_produk_rp'], 0, ',', '.') ?></td>
+                                            <td class="px-3 py-2 text-gray-700"><?= number_format($row['jumlah_terjual_unit'], 0, ',', '.') ?></td>
+                                            <td class="px-3 py-2">
+                                                <span class="px-2 py-1 text-xs font-semibold rounded-full <?= $row['status_promosi'] == 'Ya' ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600' ?>">
+                                                    <?= $row['status_promosi'] ?>
+                                                </span>
+                                            </td>
+                                            <td class="px-3 py-2">
+                                                <span class="px-2 py-1 text-xs font-bold rounded-full <?= $row['terjadi_penurunan'] == 'Ya' ? 'bg-red-100 text-red-700' : 'bg-blue-100 text-blue-700' ?>">
+                                                    <?= $row['terjadi_penurunan'] ?>
+                                                </span>
+                                            </td>
+                                            <td class="px-3 py-2 text-center">
+                                                <form action="<?= base_url('dataset/delete/' . $row['id']) ?>" method="post" onsubmit="return confirm('Yakin hapus data ini?');" class="inline">
+                                                    <?= csrf_field() ?>
+                                                    <input type="hidden" name="_method" value="DELETE">
+                                                    <!-- Tombol Hapus: Solid Terracotta -->
+                                                    <button type="submit" class="bg-[#B77466] hover:bg-[#957C62] text-white text-xs font-medium py-1 px-3 rounded-full transition">
+                                                        Hapus
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </form>
-    </div>
 
-    <!-- Tabel Data -->
-    <div class="bg-slate-800 rounded-lg shadow-xl overflow-hidden">
-        <div class="p-6">
-            <h2 class="text-xl font-semibold">Isi Tabel Dataset</h2>
-        </div>
-        <!-- Wrapper untuk scroll horizontal di layar kecil -->
-        <div class="relative overflow-x-auto">
-            <table class="w-full text-sm text-left text-gray-300">
-                <thead class="text-xs text-white uppercase bg-gray-700">
-                    <tr>
-                        <th scope="col" class="px-6 py-3">ID</th>
-                        <th scope="col" class="px-6 py-3">Durasi Layar</th>
-                        <th scope="col" class="px-6 py-3">Durasi Sosmed</th>
-                        <th scope="col" class="px-6 py-3">Durasi Tidur</th>
-                        <th scope="col" class="px-6 py-3">Resiko Depresi</th>
-                        <th scope="col" class="px-6 py-3 text-center">Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php if (empty($dataset)) : ?>
-                        <tr class="bg-slate-800 border-b border-gray-700">
-                            <td colspan="6" class="px-6 py-4 text-center">Data masih kosong.</td>
-                        </tr>
-                    <?php else : ?>
-                        <?php foreach ($dataset as $row) : ?>
-                            <tr class="bg-slate-800 border-b border-gray-700 hover:bg-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap"><?= $row['id'] ?></th>
-                                <td class="px-6 py-4 whitespace-nowrap"><?= $row['durasi_layar'] ?> jam</td>
-                                <td class="px-6 py-4 whitespace-nowrap"><?= $row['durasi_sosmed'] ?> jam</td>
-                                <td class="px-6 py-4 whitespace-nowrap"><?= $row['durasi_tidur'] ?> jam</td>
-                                <td class="px-6 py-4 font-semibold whitespace-nowrap 
-                                    <?php
-                                    if ($row['resiko_depresi'] == 'Tinggi') echo 'text-red-400';
-                                    elseif ($row['resiko_depresi'] == 'Sedang') echo 'text-yellow-400';
-                                    else echo 'text-green-400';
-                                    ?>">
-                                    <?= $row['resiko_depresi'] ?>
-                                </td>
-                                <td class="px-6 py-4 text-center">
-                                    <form action="<?= base_url('dataset/delete/' . $row['id']) ?>" method="post" onsubmit="return confirm('Anda yakin ingin menghapus data ini?');">
-                                        <?= csrf_field() ?>
-                                        <input type="hidden" name="_method" value="DELETE">
-                                        <button type="submit" class="font-medium text-red-500 hover:text-red-700 transition duration-300">Hapus</button>
-                                    </form>
-                                </td>
-                            </tr>
-                        <?php endforeach; ?>
-                    <?php endif; ?>
-                </tbody>
-            </table>
+            <!-- Form (Solid Putih) -->
+            <div class="bg-white p-6 rounded-xl shadow-xl border border-gray-200">
+                <div class="flex items-center gap-3 mb-5 pb-4 border-b border-[#E2B59A]/50">
+                    <img src="<?= base_url('public/images/icon_add.png') ?>" alt="Tambah" class="w-6 h-6"
+                         onerror="this.style.display='none'">
+                    <h2 class="text-lg font-bold text-[#957C62]">Tambah Data</h2>
+                </div>
+
+                <form action="<?= base_url('dataset/save') ?>" method="post" class="space-y-4">
+                    <?= csrf_field() ?>
+
+                    <div>
+                        <label class="block mb-1.5 text-sm font-medium text-gray-700">Waktu Penjualan</label>
+                        <input type="date" name="waktu_penjualan" required class="w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B77466] focus:border-transparent text-sm text-gray-900">
+                    </div>
+
+                    <div>
+                        <label class="block mb-1.5 text-sm font-medium text-gray-700">Nama Produk</label>
+                        <input type="text" name="nama_produk" placeholder="Indomie Goreng" required class="w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B77466] focus:border-transparent text-sm text-gray-900">
+                    </div>
+
+                    <div>
+                        <label class="block mb-1.5 text-sm font-medium text-gray-700">Kategori</label>
+                        <input type="text" name="kategori_produk" placeholder="Makanan Instan" required class="w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B77466] focus:border-transparent text-sm text-gray-900">
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3">
+                        <div>
+                            <label class="block mb-1.5 text-sm font-medium text-gray-700">Harga (Rp)</label>
+                            <input type="number" name="harga_produk_rp" placeholder="3000" required class="w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B77466] focus:border-transparent text-sm text-gray-900">
+                        </div>
+                        <div>
+                            <label class="block mb-1.5 text-sm font-medium text-gray-700">Terjual</label>
+                            <input type="number" name="jumlah_terjual_unit" placeholder="150" required class="w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B77466] focus:border-transparent text-sm text-gray-900">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3">
+                        <div>
+                            <label class="block mb-1.5 text-sm font-medium text-gray-700">Promosi</label>
+                            <select name="status_promosi" required class="w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B77466] focus:border-transparent text-sm text-gray-900">
+                                <option value="Tidak">Tidak</option>
+                                <option value="Ya">Ya</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block mb-1.5 text-sm font-semibold text-[#B77466]">Penurunan</label>
+                            <select name="terjadi_penurunan" required class="w-full px-3 py-2 bg-gray-50 border-2 border-[#B77466] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B77466] focus:border-[#B77466] text-sm text-gray-900">
+                                <option value="Tidak">Tidak</option>
+                                <option value="Ya">Ya</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Tombol Solid (TANPA GRADIENT) -->
+                    <button type="submit" class="w-full bg-[#B77466] hover:bg-[#957C62] text-white font-semibold py-2.5 rounded-lg transition-all transform hover:scale-105 shadow-md mt-6">
+                        Simpan Data
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
-
 </div>
+
+<!-- 
+    Tidak ada CSS kustom <style> di sini.
+    Semua animasi (hover:scale-105, hover:-translate-y-1) 
+    menggunakan murni Tailwind.
+-->
 
 <?= $this->endSection(); ?>
