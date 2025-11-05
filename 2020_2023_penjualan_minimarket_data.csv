@@ -1,0 +1,1013 @@
+waktu_penjualan;nama_produk;kategori_produk;harga_produk_rp;jumlah_terjual_unit;status_promosi;terjadi_penurunan
+01/01/2020;Beras 5kg;Bahan Pokok;64299;139;Tidak;Tidak
+01/01/2020;Coklat Batang;Cemilan;13471;565;Ya;Tidak
+01/01/2020;Deodoran;Perawatan Diri;22506;261;Tidak;Tidak
+01/01/2020;Indomie Goreng;Makanan Instan;3138;306;Tidak;Tidak
+01/01/2020;Kecap Manis;Bahan Pokok;15422;645;Ya;Tidak
+01/01/2020;Minyak Goreng 2L;Bahan Pokok;28834;80;Tidak;Tidak
+01/01/2020;Pasta Gigi;Perawatan Diri;8980;147;Tidak;Tidak
+01/01/2020;Pembersih Lantai;Rumah Tangga;12892;760;Ya;Tidak
+01/01/2020;Popok Bayi;Bayi;55461;416;Ya;Tidak
+01/01/2020;Saus Sambal;Bahan Pokok;7266;260;Tidak;Tidak
+01/01/2020;Shampo;Perawatan Diri;19450;241;Tidak;Tidak
+01/01/2020;Susu UHT 1L;Minuman;18557;94;Tidak;Tidak
+01/01/2020;Telur 1kg;Bahan Pokok;26841;264;Tidak;Tidak
+01/01/2020;Tisu Wajah;Rumah Tangga;10420;357;Tidak;Tidak
+01/01/2020;Yogurt;Minuman;9016;176;Tidak;Tidak
+01/02/2020;Baterai AA;Rumah Tangga;11860;237;Tidak;Tidak
+01/02/2020;Beras 5kg;Bahan Pokok;65745;290;Tidak;Tidak
+01/02/2020;Bumbu Masak;Bahan Pokok;2484;141;Tidak;Tidak
+01/02/2020;Es Krim;Makanan Beku;8282;385;Ya;Tidak
+01/02/2020;Indomie Goreng;Makanan Instan;2888;261;Tidak;Tidak
+01/02/2020;Kecap Manis;Bahan Pokok;14479;145;Tidak;Ya
+01/02/2020;Minyak Goreng 2L;Bahan Pokok;31340;373;Tidak;Tidak
+01/02/2020;Nugget Ayam;Makanan Beku;50148;108;Tidak;Tidak
+01/02/2020;Obat Flu;Kesehatan;12540;225;Tidak;Tidak
+01/02/2020;Pembersih Lantai;Rumah Tangga;12443;52;Tidak;Ya
+01/02/2020;Popok Bayi;Bayi;54328;80;Tidak;Ya
+01/02/2020;Rokok Filter;Rokok;31147;102;Tidak;Tidak
+01/02/2020;Roti Tawar;Roti & Kue;15157;50;Tidak;Tidak
+01/02/2020;Sabun Mandi;Perawatan Diri;4377;622;Ya;Tidak
+01/02/2020;Saus Sambal;Bahan Pokok;7296;282;Ya;Tidak
+01/02/2020;Shampo;Perawatan Diri;19241;240;Tidak;Tidak
+01/02/2020;Sosis Kanzler;Makanan Beku;45744;315;Tidak;Tidak
+01/02/2020;Susu UHT 1L;Minuman;17612;75;Ya;Tidak
+01/03/2020;Biskuit;Cemilan;11384;87;Tidak;Tidak
+01/03/2020;Bumbu Masak;Bahan Pokok;2465;37;Tidak;Ya
+01/03/2020;Coklat Batang;Cemilan;13549;167;Tidak;Ya
+01/03/2020;Deodoran;Perawatan Diri;22033;188;Ya;Ya
+01/03/2020;Deterjen 1kg;Rumah Tangga;24107;550;Ya;Tidak
+01/03/2020;Es Krim;Makanan Beku;7957;270;Ya;Ya
+01/03/2020;Indomie Goreng;Makanan Instan;3085;67;Tidak;Ya
+01/03/2020;Kecap Manis;Bahan Pokok;15057;262;Tidak;Tidak
+01/03/2020;Kopi Sachet;Minuman;1487;341;Tidak;Tidak
+01/03/2020;Pasta Gigi;Perawatan Diri;8551;113;Tidak;Tidak
+01/03/2020;Pembersih Lantai;Rumah Tangga;12665;120;Tidak;Tidak
+01/03/2020;Rokok Filter;Rokok;32492;280;Ya;Tidak
+01/03/2020;Roti Tawar;Roti & Kue;15103;655;Ya;Tidak
+01/03/2020;Saus Sambal;Bahan Pokok;7159;413;Tidak;Tidak
+01/03/2020;Shampo;Perawatan Diri;18272;330;Ya;Tidak
+01/03/2020;Sosis Kanzler;Makanan Beku;45370;157;Tidak;Ya
+01/03/2020;Susu UHT 1L;Minuman;18893;231;Tidak;Tidak
+01/03/2020;Teh Celup;Minuman;8051;292;Tidak;Tidak
+01/04/2020;Baterai AA;Rumah Tangga;12152;511;Ya;Tidak
+01/04/2020;Coklat Batang;Cemilan;14093;127;Tidak;Tidak
+01/04/2020;Deterjen 1kg;Rumah Tangga;24631;391;Tidak;Ya
+01/04/2020;Kecap Manis;Bahan Pokok;14351;228;Tidak;Tidak
+01/04/2020;Pasta Gigi;Perawatan Diri;9210;657;Ya;Tidak
+01/04/2020;Pembersih Lantai;Rumah Tangga;13329;365;Tidak;Tidak
+01/04/2020;Popok Bayi;Bayi;57469;87;Ya;Tidak
+01/04/2020;Rokok Filter;Rokok;33057;242;Tidak;Tidak
+01/04/2020;Roti Tawar;Roti & Kue;15294;231;Tidak;Ya
+01/04/2020;Sabun Mandi;Perawatan Diri;4280;82;Tidak;Ya
+01/04/2020;Saus Sambal;Bahan Pokok;7334;64;Tidak;Ya
+01/04/2020;Shampo;Perawatan Diri;18111;274;Tidak;Tidak
+01/04/2020;Susu UHT 1L;Minuman;18460;357;Ya;Tidak
+01/04/2020;Teh Celup;Minuman;8374;454;Ya;Tidak
+01/04/2020;Tisu Wajah;Rumah Tangga;10199;135;Tidak;Ya
+01/04/2020;Yogurt;Minuman;8705;98;Tidak;Ya
+01/05/2020;Air Mineral 600ml;Minuman;3423;47;Ya;Tidak
+01/05/2020;Baterai AA;Rumah Tangga;11498;176;Tidak;Ya
+01/05/2020;Beras 5kg;Bahan Pokok;66185;187;Tidak;Ya
+01/05/2020;Biskuit;Cemilan;11458;122;Tidak;Tidak
+01/05/2020;Bumbu Masak;Bahan Pokok;2499;386;Tidak;Tidak
+01/05/2020;Coklat Batang;Cemilan;13800;589;Ya;Tidak
+01/05/2020;Deodoran;Perawatan Diri;21217;395;Tidak;Tidak
+01/05/2020;Indomie Goreng;Makanan Instan;2980;438;Tidak;Tidak
+01/05/2020;Kecap Manis;Bahan Pokok;15511;324;Tidak;Tidak
+01/05/2020;Kopi Sachet;Minuman;1558;428;Tidak;Tidak
+01/05/2020;Mie Cup;Makanan Instan;4882;53;Tidak;Tidak
+01/05/2020;Nugget Ayam;Makanan Beku;49988;49;Tidak;Ya
+01/05/2020;Obat Flu;Kesehatan;12208;32;Tidak;Ya
+01/05/2020;Pasta Gigi;Perawatan Diri;8914;99;Tidak;Ya
+01/05/2020;Pembersih Lantai;Rumah Tangga;13305;610;Ya;Tidak
+01/05/2020;Popok Bayi;Bayi;56046;218;Tidak;Tidak
+01/05/2020;Rokok Filter;Rokok;32422;157;Tidak;Ya
+01/05/2020;Roti Tawar;Roti & Kue;14665;85;Tidak;Ya
+01/05/2020;Sabun Mandi;Perawatan Diri;4287;247;Tidak;Tidak
+01/05/2020;Saus Sambal;Bahan Pokok;6706;435;Tidak;Tidak
+01/05/2020;Shampo;Perawatan Diri;18306;386;Tidak;Tidak
+01/05/2020;Susu UHT 1L;Minuman;18191;258;Tidak;Ya
+01/05/2020;Telur 1kg;Bahan Pokok;28744;315;Tidak;Tidak
+01/05/2020;Tisu Wajah;Rumah Tangga;9916;395;Tidak;Tidak
+01/05/2020;Yogurt;Minuman;9395;139;Tidak;Tidak
+01/06/2020;Air Mineral 600ml;Minuman;3325;423;Tidak;Tidak
+01/06/2020;Beras 5kg;Bahan Pokok;64742;220;Tidak;Tidak
+01/06/2020;Biskuit;Cemilan;10869;73;Tidak;Ya
+01/06/2020;Bumbu Masak;Bahan Pokok;2508;274;Tidak;Ya
+01/06/2020;Coklat Batang;Cemilan;13621;235;Tidak;Ya
+01/06/2020;Es Krim;Makanan Beku;7932;227;Tidak;Tidak
+01/06/2020;Indomie Goreng;Makanan Instan;2993;411;Tidak;Tidak
+01/06/2020;Kopi Sachet;Minuman;1469;341;Ya;Tidak
+01/06/2020;Mie Cup;Makanan Instan;4837;349;Tidak;Tidak
+01/06/2020;Minyak Goreng 2L;Bahan Pokok;30845;283;Tidak;Tidak
+01/06/2020;Nugget Ayam;Makanan Beku;47892;391;Tidak;Tidak
+01/06/2020;Obat Flu;Kesehatan;12193;435;Tidak;Tidak
+01/06/2020;Pasta Gigi;Perawatan Diri;9255;347;Tidak;Tidak
+01/06/2020;Pembersih Lantai;Rumah Tangga;13208;77;Tidak;Ya
+01/06/2020;Popok Bayi;Bayi;56146;297;Tidak;Tidak
+01/06/2020;Rokok Filter;Rokok;33542;356;Tidak;Tidak
+01/06/2020;Roti Tawar;Roti & Kue;15039;441;Ya;Tidak
+01/06/2020;Saus Sambal;Bahan Pokok;7000;212;Tidak;Ya
+01/06/2020;Shampo;Perawatan Diri;18403;403;Tidak;Tidak
+01/06/2020;Susu UHT 1L;Minuman;18722;264;Ya;Tidak
+01/06/2020;Teh Celup;Minuman;7699;165;Tidak;Ya
+01/06/2020;Tisu Wajah;Rumah Tangga;9958;372;Tidak;Tidak
+01/06/2020;Yogurt;Minuman;8627;258;Tidak;Tidak
+01/07/2020;Air Mineral 600ml;Minuman;3463;69;Ya;Ya
+01/07/2020;Beras 5kg;Bahan Pokok;64492;241;Ya;Tidak
+01/07/2020;Biskuit;Cemilan;10830;175;Tidak;Tidak
+01/07/2020;Bumbu Masak;Bahan Pokok;2493;387;Tidak;Tidak
+01/07/2020;Coklat Batang;Cemilan;13709;362;Tidak;Tidak
+01/07/2020;Es Krim;Makanan Beku;7649;340;Tidak;Tidak
+01/07/2020;Indomie Goreng;Makanan Instan;3018;280;Tidak;Ya
+01/07/2020;Kopi Sachet;Minuman;1437;148;Tidak;Ya
+01/07/2020;Mie Cup;Makanan Instan;4839;158;Tidak;Ya
+01/07/2020;Obat Flu;Kesehatan;12289;66;Tidak;Ya
+01/07/2020;Pasta Gigi;Perawatan Diri;8891;300;Tidak;Tidak
+01/07/2020;Pembersih Lantai;Rumah Tangga;13258;264;Tidak;Tidak
+01/07/2020;Popok Bayi;Bayi;55206;110;Tidak;Ya
+01/07/2020;Roti Tawar;Roti & Kue;14587;61;Tidak;Ya
+01/07/2020;Saus Sambal;Bahan Pokok;7350;206;Tidak;Tidak
+01/07/2020;Teh Celup;Minuman;7833;616;Ya;Tidak
+01/07/2020;Telur 1kg;Bahan Pokok;28980;254;Tidak;Tidak
+01/07/2020;Tisu Wajah;Rumah Tangga;10301;275;Ya;Ya
+01/07/2020;Yogurt;Minuman;8691;101;Tidak;Ya
+01/08/2020;Air Mineral 600ml;Minuman;3421;421;Ya;Tidak
+01/08/2020;Baterai AA;Rumah Tangga;12357;748;Ya;Tidak
+01/08/2020;Bumbu Masak;Bahan Pokok;2394;308;Ya;Tidak
+01/08/2020;Coklat Batang;Cemilan;14080;155;Tidak;Ya
+01/08/2020;Deterjen 1kg;Rumah Tangga;25172;357;Tidak;Tidak
+01/08/2020;Indomie Goreng;Makanan Instan;3090;52;Tidak;Ya
+01/08/2020;Kecap Manis;Bahan Pokok;15553;153;Tidak;Ya
+01/08/2020;Kopi Sachet;Minuman;1490;214;Tidak;Tidak
+01/08/2020;Mie Cup;Makanan Instan;5104;255;Ya;Tidak
+01/08/2020;Nugget Ayam;Makanan Beku;49188;447;Tidak;Tidak
+01/08/2020;Obat Flu;Kesehatan;12533;260;Ya;Tidak
+01/08/2020;Pasta Gigi;Perawatan Diri;9251;350;Tidak;Tidak
+01/08/2020;Pembersih Lantai;Rumah Tangga;12662;431;Tidak;Tidak
+01/08/2020;Popok Bayi;Bayi;55432;335;Tidak;Tidak
+01/08/2020;Roti Tawar;Roti & Kue;15088;197;Tidak;Tidak
+01/08/2020;Saus Sambal;Bahan Pokok;6655;386;Tidak;Tidak
+01/08/2020;Shampo;Perawatan Diri;18655;46;Tidak;Ya
+01/08/2020;Sosis Kanzler;Makanan Beku;46965;384;Tidak;Tidak
+01/08/2020;Susu UHT 1L;Minuman;17848;200;Ya;Tidak
+01/08/2020;Teh Celup;Minuman;8054;350;Tidak;Ya
+01/08/2020;Telur 1kg;Bahan Pokok;26626;73;Ya;Ya
+01/08/2020;Tisu Wajah;Rumah Tangga;10234;292;Ya;Tidak
+01/08/2020;Yogurt;Minuman;9126;180;Ya;Tidak
+01/09/2020;Air Mineral 600ml;Minuman;3394;131;Tidak;Ya
+01/09/2020;Baterai AA;Rumah Tangga;12529;55;Tidak;Ya
+01/09/2020;Beras 5kg;Bahan Pokok;67202;61;Tidak;Ya
+01/09/2020;Biskuit;Cemilan;10576;49;Tidak;Ya
+01/09/2020;Bumbu Masak;Bahan Pokok;2383;435;Tidak;Tidak
+01/09/2020;Coklat Batang;Cemilan;13517;542;Ya;Tidak
+01/09/2020;Deodoran;Perawatan Diri;21401;408;Tidak;Tidak
+01/09/2020;Deterjen 1kg;Rumah Tangga;25652;122;Tidak;Ya
+01/09/2020;Es Krim;Makanan Beku;7736;563;Ya;Tidak
+01/09/2020;Indomie Goreng;Makanan Instan;2907;142;Tidak;Tidak
+01/09/2020;Kecap Manis;Bahan Pokok;14449;170;Tidak;Tidak
+01/09/2020;Kopi Sachet;Minuman;1574;230;Tidak;Tidak
+01/09/2020;Mie Cup;Makanan Instan;4928;91;Tidak;Ya
+01/09/2020;Minyak Goreng 2L;Bahan Pokok;29090;339;Ya;Tidak
+01/09/2020;Nugget Ayam;Makanan Beku;48917;242;Ya;Ya
+01/09/2020;Obat Flu;Kesehatan;11813;450;Tidak;Tidak
+01/09/2020;Pembersih Lantai;Rumah Tangga;12719;198;Ya;Ya
+01/09/2020;Popok Bayi;Bayi;55187;198;Tidak;Ya
+01/09/2020;Rokok Filter;Rokok;31291;491;Ya;Tidak
+01/09/2020;Roti Tawar;Roti & Kue;15394;290;Tidak;Tidak
+01/09/2020;Sabun Mandi;Perawatan Diri;4345;34;Tidak;Ya
+01/09/2020;Saus Sambal;Bahan Pokok;6871;434;Tidak;Tidak
+01/09/2020;Sosis Kanzler;Makanan Beku;46397;281;Tidak;Ya
+01/09/2020;Susu UHT 1L;Minuman;17279;274;Tidak;Tidak
+01/09/2020;Teh Celup;Minuman;8049;399;Tidak;Tidak
+01/09/2020;Telur 1kg;Bahan Pokok;28272;452;Ya;Tidak
+01/09/2020;Tisu Wajah;Rumah Tangga;10218;215;Tidak;Ya
+01/10/2020;Air Mineral 600ml;Minuman;3328;51;Tidak;Ya
+01/10/2020;Baterai AA;Rumah Tangga;11895;590;Ya;Tidak
+01/10/2020;Beras 5kg;Bahan Pokok;63181;345;Ya;Tidak
+01/10/2020;Bumbu Masak;Bahan Pokok;2413;143;Tidak;Ya
+01/10/2020;Coklat Batang;Cemilan;14562;209;Tidak;Ya
+01/10/2020;Deterjen 1kg;Rumah Tangga;26017;470;Ya;Tidak
+01/10/2020;Kecap Manis;Bahan Pokok;15258;420;Ya;Tidak
+01/10/2020;Kopi Sachet;Minuman;1432;453;Ya;Tidak
+01/10/2020;Minyak Goreng 2L;Bahan Pokok;29882;383;Ya;Tidak
+01/10/2020;Nugget Ayam;Makanan Beku;47436;397;Tidak;Tidak
+01/10/2020;Pembersih Lantai;Rumah Tangga;13557;127;Tidak;Ya
+01/10/2020;Popok Bayi;Bayi;52919;299;Tidak;Tidak
+01/10/2020;Rokok Filter;Rokok;31578;428;Ya;Tidak
+01/10/2020;Roti Tawar;Roti & Kue;14316;249;Tidak;Tidak
+01/10/2020;Sabun Mandi;Perawatan Diri;4367;65;Ya;Tidak
+01/10/2020;Susu UHT 1L;Minuman;17559;281;Tidak;Tidak
+01/10/2020;Teh Celup;Minuman;8055;261;Tidak;Ya
+01/10/2020;Telur 1kg;Bahan Pokok;27110;398;Tidak;Tidak
+01/10/2020;Tisu Wajah;Rumah Tangga;9870;152;Tidak;Ya
+01/10/2020;Yogurt;Minuman;8822;149;Tidak;Tidak
+01/11/2020;Air Mineral 600ml;Minuman;3336;383;Tidak;Tidak
+01/11/2020;Baterai AA;Rumah Tangga;12269;314;Tidak;Ya
+01/11/2020;Bumbu Masak;Bahan Pokok;2559;129;Ya;Tidak
+01/11/2020;Deterjen 1kg;Rumah Tangga;24136;223;Tidak;Ya
+01/11/2020;Es Krim;Makanan Beku;8281;204;Tidak;Ya
+01/11/2020;Indomie Goreng;Makanan Instan;2904;378;Tidak;Tidak
+01/11/2020;Kecap Manis;Bahan Pokok;14288;421;Tidak;Tidak
+01/11/2020;Mie Cup;Makanan Instan;4877;371;Tidak;Tidak
+01/11/2020;Nugget Ayam;Makanan Beku;46818;272;Tidak;Ya
+01/11/2020;Obat Flu;Kesehatan;11567;417;Tidak;Tidak
+01/11/2020;Pembersih Lantai;Rumah Tangga;12372;397;Tidak;Tidak
+01/11/2020;Popok Bayi;Bayi;54200;86;Tidak;Ya
+01/11/2020;Rokok Filter;Rokok;31721;263;Tidak;Ya
+01/11/2020;Roti Tawar;Roti & Kue;15542;446;Tidak;Tidak
+01/11/2020;Sabun Mandi;Perawatan Diri;4336;205;Tidak;Tidak
+01/11/2020;Sosis Kanzler;Makanan Beku;45689;313;Ya;Tidak
+01/11/2020;Susu UHT 1L;Minuman;18051;101;Tidak;Ya
+01/11/2020;Telur 1kg;Bahan Pokok;27300;72;Ya;Ya
+01/11/2020;Tisu Wajah;Rumah Tangga;10234;433;Tidak;Tidak
+01/11/2020;Yogurt;Minuman;8986;347;Tidak;Tidak
+01/12/2020;Air Mineral 600ml;Minuman;3377;189;Tidak;Ya
+01/12/2020;Baterai AA;Rumah Tangga;11875;202;Tidak;Ya
+01/12/2020;Bumbu Masak;Bahan Pokok;2580;109;Tidak;Tidak
+01/12/2020;Coklat Batang;Cemilan;13417;56;Ya;Ya
+01/12/2020;Deterjen 1kg;Rumah Tangga;25636;214;Tidak;Tidak
+01/12/2020;Es Krim;Makanan Beku;7709;286;Tidak;Tidak
+01/12/2020;Indomie Goreng;Makanan Instan;2904;429;Tidak;Tidak
+01/12/2020;Kecap Manis;Bahan Pokok;15276;266;Tidak;Ya
+01/12/2020;Mie Cup;Makanan Instan;5162;400;Tidak;Tidak
+01/12/2020;Minyak Goreng 2L;Bahan Pokok;29075;118;Tidak;Ya
+01/12/2020;Nugget Ayam;Makanan Beku;46453;413;Tidak;Tidak
+01/12/2020;Obat Flu;Kesehatan;11418;165;Tidak;Ya
+01/12/2020;Pembersih Lantai;Rumah Tangga;13590;77;Ya;Ya
+01/12/2020;Popok Bayi;Bayi;55634;401;Tidak;Tidak
+01/12/2020;Rokok Filter;Rokok;30717;125;Tidak;Ya
+01/12/2020;Roti Tawar;Roti & Kue;15026;169;Tidak;Ya
+01/12/2020;Sabun Mandi;Perawatan Diri;4602;211;Ya;Tidak
+01/12/2020;Saus Sambal;Bahan Pokok;6891;191;Tidak;Ya
+01/12/2020;Shampo;Perawatan Diri;18422;51;Tidak;Tidak
+01/12/2020;Susu UHT 1L;Minuman;18372;308;Tidak;Tidak
+01/12/2020;Teh Celup;Minuman;7892;103;Tidak;Ya
+01/12/2020;Tisu Wajah;Rumah Tangga;9663;278;Tidak;Ya
+01/12/2020;Yogurt;Minuman;8902;265;Tidak;Tidak
+01/01/2021;Air Mineral 600ml;Minuman;3461;151;Tidak;Tidak
+01/01/2021;Baterai AA;Rumah Tangga;11869;364;Tidak;Tidak
+01/01/2021;Beras 5kg;Bahan Pokok;67322;167;Tidak;Ya
+01/01/2021;Biskuit;Cemilan;10720;269;Tidak;Tidak
+01/01/2021;Bumbu Masak;Bahan Pokok;2478;448;Tidak;Tidak
+01/01/2021;Coklat Batang;Cemilan;13473;220;Tidak;Tidak
+01/01/2021;Deodoran;Perawatan Diri;22972;360;Tidak;Tidak
+01/01/2021;Deterjen 1kg;Rumah Tangga;24096;35;Tidak;Ya
+01/01/2021;Es Krim;Makanan Beku;8128;208;Ya;Ya
+01/01/2021;Indomie Goreng;Makanan Instan;3049;372;Tidak;Tidak
+01/01/2021;Kecap Manis;Bahan Pokok;14935;52;Tidak;Ya
+01/01/2021;Mie Cup;Makanan Instan;4805;704;Ya;Tidak
+01/01/2021;Minyak Goreng 2L;Bahan Pokok;29975;92;Ya;Tidak
+01/01/2021;Nugget Ayam;Makanan Beku;48078;216;Tidak;Ya
+01/01/2021;Pasta Gigi;Perawatan Diri;9017;254;Tidak;Ya
+01/01/2021;Pembersih Lantai;Rumah Tangga;12739;332;Ya;Tidak
+01/01/2021;Popok Bayi;Bayi;53966;235;Tidak;Ya
+01/01/2021;Sabun Mandi;Perawatan Diri;4555;74;Tidak;Ya
+01/01/2021;Saus Sambal;Bahan Pokok;7104;427;Tidak;Tidak
+01/01/2021;Shampo;Perawatan Diri;19425;178;Tidak;Tidak
+01/01/2021;Sosis Kanzler;Makanan Beku;45874;440;Tidak;Tidak
+01/01/2021;Susu UHT 1L;Minuman;17536;211;Tidak;Ya
+01/01/2021;Teh Celup;Minuman;8104;102;Tidak;Tidak
+01/01/2021;Telur 1kg;Bahan Pokok;28759;328;Ya;Tidak
+01/01/2021;Yogurt;Minuman;9083;291;Ya;Tidak
+01/02/2021;Air Mineral 600ml;Minuman;3637;325;Tidak;Tidak
+01/02/2021;Baterai AA;Rumah Tangga;11404;429;Tidak;Tidak
+01/02/2021;Beras 5kg;Bahan Pokok;61909;305;Tidak;Tidak
+01/02/2021;Biskuit;Cemilan;11401;275;Tidak;Tidak
+01/02/2021;Bumbu Masak;Bahan Pokok;2518;157;Tidak;Ya
+01/02/2021;Coklat Batang;Cemilan;14585;522;Ya;Tidak
+01/02/2021;Deterjen 1kg;Rumah Tangga;23922;399;Tidak;Tidak
+01/02/2021;Es Krim;Makanan Beku;8298;459;Ya;Tidak
+01/02/2021;Indomie Goreng;Makanan Instan;2986;203;Tidak;Ya
+01/02/2021;Kopi Sachet;Minuman;1487;223;Tidak;Ya
+01/02/2021;Mie Cup;Makanan Instan;5065;210;Tidak;Ya
+01/02/2021;Minyak Goreng 2L;Bahan Pokok;30213;242;Tidak;Tidak
+01/02/2021;Pasta Gigi;Perawatan Diri;9260;146;Tidak;Ya
+01/02/2021;Sabun Mandi;Perawatan Diri;4687;92;Tidak;Tidak
+01/02/2021;Saus Sambal;Bahan Pokok;6832;202;Tidak;Ya
+01/02/2021;Shampo;Perawatan Diri;18758;211;Tidak;Tidak
+01/02/2021;Sosis Kanzler;Makanan Beku;44168;547;Ya;Tidak
+01/02/2021;Teh Celup;Minuman;7626;163;Ya;Tidak
+01/02/2021;Telur 1kg;Bahan Pokok;28238;259;Tidak;Tidak
+01/02/2021;Tisu Wajah;Rumah Tangga;10484;181;Ya;Ya
+01/02/2021;Yogurt;Minuman;8759;406;Tidak;Tidak
+01/03/2021;Air Mineral 600ml;Minuman;3574;386;Tidak;Tidak
+01/03/2021;Baterai AA;Rumah Tangga;12517;316;Tidak;Ya
+01/03/2021;Beras 5kg;Bahan Pokok;62802;193;Tidak;Ya
+01/03/2021;Coklat Batang;Cemilan;13689;301;Tidak;Ya
+01/03/2021;Deodoran;Perawatan Diri;22452;40;Tidak;Ya
+01/03/2021;Indomie Goreng;Makanan Instan;2961;316;Ya;Tidak
+01/03/2021;Mie Cup;Makanan Instan;5229;357;Tidak;Tidak
+01/03/2021;Minyak Goreng 2L;Bahan Pokok;28905;203;Tidak;Tidak
+01/03/2021;Nugget Ayam;Makanan Beku;45943;189;Tidak;Tidak
+01/03/2021;Pembersih Lantai;Rumah Tangga;12749;437;Tidak;Tidak
+01/03/2021;Roti Tawar;Roti & Kue;15727;398;Ya;Tidak
+01/03/2021;Sabun Mandi;Perawatan Diri;4562;134;Tidak;Tidak
+01/03/2021;Saus Sambal;Bahan Pokok;6807;72;Ya;Ya
+01/03/2021;Shampo;Perawatan Diri;19321;70;Tidak;Ya
+01/03/2021;Sosis Kanzler;Makanan Beku;44703;134;Tidak;Ya
+01/03/2021;Teh Celup;Minuman;7917;111;Tidak;Ya
+01/03/2021;Tisu Wajah;Rumah Tangga;9949;204;Tidak;Tidak
+01/03/2021;Yogurt;Minuman;9270;313;Tidak;Tidak
+01/04/2021;Air Mineral 600ml;Minuman;3551;141;Tidak;Ya
+01/04/2021;Baterai AA;Rumah Tangga;12583;348;Tidak;Tidak
+01/04/2021;Beras 5kg;Bahan Pokok;66640;339;Tidak;Tidak
+01/04/2021;Biskuit;Cemilan;10503;325;Tidak;Tidak
+01/04/2021;Bumbu Masak;Bahan Pokok;2562;369;Tidak;Tidak
+01/04/2021;Coklat Batang;Cemilan;14100;182;Tidak;Ya
+01/04/2021;Deodoran;Perawatan Diri;22851;250;Tidak;Tidak
+01/04/2021;Deterjen 1kg;Rumah Tangga;25402;268;Ya;Ya
+01/04/2021;Es Krim;Makanan Beku;7858;525;Ya;Tidak
+01/04/2021;Indomie Goreng;Makanan Instan;2993;304;Tidak;Tidak
+01/04/2021;Kecap Manis;Bahan Pokok;15020;567;Ya;Tidak
+01/04/2021;Mie Cup;Makanan Instan;4869;277;Tidak;Tidak
+01/04/2021;Minyak Goreng 2L;Bahan Pokok;28643;234;Ya;Tidak
+01/04/2021;Nugget Ayam;Makanan Beku;48555;735;Ya;Tidak
+01/04/2021;Obat Flu;Kesehatan;12321;357;Tidak;Tidak
+01/04/2021;Pasta Gigi;Perawatan Diri;9165;135;Tidak;Tidak
+01/04/2021;Popok Bayi;Bayi;53342;210;Tidak;Tidak
+01/04/2021;Rokok Filter;Rokok;31065;121;Tidak;Tidak
+01/04/2021;Roti Tawar;Roti & Kue;15024;140;Tidak;Ya
+01/04/2021;Sabun Mandi;Perawatan Diri;4333;421;Ya;Tidak
+01/04/2021;Saus Sambal;Bahan Pokok;6845;289;Ya;Tidak
+01/04/2021;Shampo;Perawatan Diri;18883;428;Tidak;Tidak
+01/04/2021;Sosis Kanzler;Makanan Beku;45974;68;Tidak;Ya
+01/04/2021;Susu UHT 1L;Minuman;17144;387;Tidak;Tidak
+01/04/2021;Teh Celup;Minuman;7789;234;Tidak;Tidak
+01/04/2021;Telur 1kg;Bahan Pokok;28005;87;Tidak;Ya
+01/04/2021;Tisu Wajah;Rumah Tangga;10343;311;Tidak;Tidak
+01/04/2021;Yogurt;Minuman;8684;350;Tidak;Tidak
+01/05/2021;Air Mineral 600ml;Minuman;3428;180;Tidak;Tidak
+01/05/2021;Beras 5kg;Bahan Pokok;62227;644;Ya;Tidak
+01/05/2021;Biskuit;Cemilan;11137;475;Ya;Tidak
+01/05/2021;Deodoran;Perawatan Diri;22043;446;Tidak;Tidak
+01/05/2021;Deterjen 1kg;Rumah Tangga;24309;427;Tidak;Tidak
+01/05/2021;Es Krim;Makanan Beku;8377;370;Tidak;Ya
+01/05/2021;Indomie Goreng;Makanan Instan;2856;314;Tidak;Tidak
+01/05/2021;Kecap Manis;Bahan Pokok;14827;58;Tidak;Ya
+01/05/2021;Kopi Sachet;Minuman;1542;450;Tidak;Tidak
+01/05/2021;Mie Cup;Makanan Instan;4762;612;Ya;Tidak
+01/05/2021;Pembersih Lantai;Rumah Tangga;13347;333;Tidak;Tidak
+01/05/2021;Rokok Filter;Rokok;32536;109;Tidak;Tidak
+01/05/2021;Roti Tawar;Roti & Kue;15434;93;Tidak;Ya
+01/05/2021;Sabun Mandi;Perawatan Diri;4637;82;Tidak;Ya
+01/05/2021;Saus Sambal;Bahan Pokok;7219;433;Tidak;Tidak
+01/05/2021;Susu UHT 1L;Minuman;18649;31;Tidak;Ya
+01/05/2021;Telur 1kg;Bahan Pokok;26677;202;Tidak;Tidak
+01/05/2021;Tisu Wajah;Rumah Tangga;10052;135;Tidak;Ya
+01/05/2021;Yogurt;Minuman;9091;313;Ya;Tidak
+01/06/2021;Baterai AA;Rumah Tangga;12290;73;Tidak;Ya
+01/06/2021;Beras 5kg;Bahan Pokok;67272;295;Tidak;Ya
+01/06/2021;Biskuit;Cemilan;11430;207;Tidak;Ya
+01/06/2021;Bumbu Masak;Bahan Pokok;2445;276;Tidak;Ya
+01/06/2021;Coklat Batang;Cemilan;14395;171;Tidak;Tidak
+01/06/2021;Deodoran;Perawatan Diri;21482;578;Ya;Tidak
+01/06/2021;Deterjen 1kg;Rumah Tangga;25452;347;Ya;Tidak
+01/06/2021;Es Krim;Makanan Beku;7915;131;Tidak;Ya
+01/06/2021;Indomie Goreng;Makanan Instan;2946;363;Tidak;Tidak
+01/06/2021;Kecap Manis;Bahan Pokok;14937;304;Tidak;Tidak
+01/06/2021;Kopi Sachet;Minuman;1450;92;Tidak;Ya
+01/06/2021;Mie Cup;Makanan Instan;4775;249;Tidak;Ya
+01/06/2021;Minyak Goreng 2L;Bahan Pokok;30501;70;Tidak;Ya
+01/06/2021;Nugget Ayam;Makanan Beku;49510;187;Tidak;Ya
+01/06/2021;Obat Flu;Kesehatan;12498;225;Tidak;Ya
+01/06/2021;Pasta Gigi;Perawatan Diri;9372;121;Tidak;Tidak
+01/06/2021;Pembersih Lantai;Rumah Tangga;13228;448;Tidak;Tidak
+01/06/2021;Popok Bayi;Bayi;53510;315;Tidak;Tidak
+01/06/2021;Roti Tawar;Roti & Kue;15688;386;Tidak;Tidak
+01/06/2021;Sabun Mandi;Perawatan Diri;4335;449;Tidak;Tidak
+01/06/2021;Saus Sambal;Bahan Pokok;6902;210;Ya;Ya
+01/06/2021;Shampo;Perawatan Diri;19556;393;Tidak;Tidak
+01/06/2021;Sosis Kanzler;Makanan Beku;44684;123;Ya;Tidak
+01/06/2021;Susu UHT 1L;Minuman;17131;310;Tidak;Tidak
+01/06/2021;Teh Celup;Minuman;8247;321;Tidak;Tidak
+01/06/2021;Telur 1kg;Bahan Pokok;29046;370;Tidak;Tidak
+01/06/2021;Yogurt;Minuman;9260;234;Tidak;Ya
+01/07/2021;Air Mineral 600ml;Minuman;3510;195;Tidak;Tidak
+01/07/2021;Baterai AA;Rumah Tangga;11868;345;Tidak;Tidak
+01/07/2021;Coklat Batang;Cemilan;13743;343;Tidak;Tidak
+01/07/2021;Deterjen 1kg;Rumah Tangga;25661;227;Tidak;Ya
+01/07/2021;Es Krim;Makanan Beku;8243;53;Tidak;Ya
+01/07/2021;Indomie Goreng;Makanan Instan;2862;226;Tidak;Ya
+01/07/2021;Kecap Manis;Bahan Pokok;14925;385;Tidak;Tidak
+01/07/2021;Kopi Sachet;Minuman;1464;490;Ya;Tidak
+01/07/2021;Mie Cup;Makanan Instan;5125;271;Tidak;Tidak
+01/07/2021;Minyak Goreng 2L;Bahan Pokok;30156;108;Tidak;Tidak
+01/07/2021;Obat Flu;Kesehatan;11974;249;Tidak;Tidak
+01/07/2021;Sabun Mandi;Perawatan Diri;4364;332;Tidak;Ya
+01/07/2021;Shampo;Perawatan Diri;18679;243;Ya;Ya
+01/07/2021;Sosis Kanzler;Makanan Beku;42905;383;Tidak;Tidak
+01/07/2021;Telur 1kg;Bahan Pokok;29202;93;Ya;Ya
+01/07/2021;Tisu Wajah;Rumah Tangga;10290;185;Tidak;Tidak
+01/07/2021;Yogurt;Minuman;9215;557;Ya;Tidak
+01/08/2021;Beras 5kg;Bahan Pokok;68193;235;Tidak;Tidak
+01/08/2021;Biskuit;Cemilan;11470;38;Tidak;Ya
+01/08/2021;Bumbu Masak;Bahan Pokok;2583;159;Tidak;Ya
+01/08/2021;Coklat Batang;Cemilan;13782;302;Ya;Tidak
+01/08/2021;Deodoran;Perawatan Diri;21535;429;Tidak;Ya
+01/08/2021;Deterjen 1kg;Rumah Tangga;25031;385;Tidak;Tidak
+01/08/2021;Es Krim;Makanan Beku;8235;403;Tidak;Tidak
+01/08/2021;Indomie Goreng;Makanan Instan;3124;66;Tidak;Ya
+01/08/2021;Kecap Manis;Bahan Pokok;15434;382;Tidak;Tidak
+01/08/2021;Mie Cup;Makanan Instan;5246;679;Ya;Tidak
+01/08/2021;Minyak Goreng 2L;Bahan Pokok;30830;239;Tidak;Tidak
+01/08/2021;Nugget Ayam;Makanan Beku;49377;671;Ya;Tidak
+01/08/2021;Obat Flu;Kesehatan;11596;199;Ya;Tidak
+01/08/2021;Rokok Filter;Rokok;31534;447;Ya;Tidak
+01/08/2021;Roti Tawar;Roti & Kue;14887;443;Tidak;Tidak
+01/08/2021;Sabun Mandi;Perawatan Diri;4650;185;Tidak;Ya
+01/08/2021;Shampo;Perawatan Diri;18389;127;Tidak;Ya
+01/08/2021;Sosis Kanzler;Makanan Beku;43206;357;Tidak;Tidak
+01/08/2021;Telur 1kg;Bahan Pokok;29292;608;Ya;Tidak
+01/08/2021;Tisu Wajah;Rumah Tangga;9772;45;Tidak;Ya
+01/09/2021;Air Mineral 600ml;Minuman;3632;431;Tidak;Tidak
+01/09/2021;Beras 5kg;Bahan Pokok;68152;67;Tidak;Ya
+01/09/2021;Biskuit;Cemilan;10902;323;Ya;Tidak
+01/09/2021;Deodoran;Perawatan Diri;21044;327;Tidak;Tidak
+01/09/2021;Es Krim;Makanan Beku;8023;162;Ya;Ya
+01/09/2021;Kecap Manis;Bahan Pokok;15740;79;Ya;Ya
+01/09/2021;Kopi Sachet;Minuman;1457;265;Tidak;Ya
+01/09/2021;Mie Cup;Makanan Instan;5200;356;Tidak;Ya
+01/09/2021;Nugget Ayam;Makanan Beku;46376;174;Tidak;Ya
+01/09/2021;Obat Flu;Kesehatan;12045;208;Ya;Tidak
+01/09/2021;Pasta Gigi;Perawatan Diri;9265;198;Tidak;Tidak
+01/09/2021;Pembersih Lantai;Rumah Tangga;13434;231;Tidak;Ya
+01/09/2021;Popok Bayi;Bayi;57489;680;Ya;Tidak
+01/09/2021;Rokok Filter;Rokok;33585;279;Tidak;Ya
+01/09/2021;Roti Tawar;Roti & Kue;14489;389;Ya;Tidak
+01/09/2021;Sabun Mandi;Perawatan Diri;4419;323;Tidak;Tidak
+01/09/2021;Sosis Kanzler;Makanan Beku;45888;49;Tidak;Ya
+01/09/2021;Susu UHT 1L;Minuman;17327;331;Tidak;Tidak
+01/09/2021;Teh Celup;Minuman;8342;700;Ya;Tidak
+01/09/2021;Telur 1kg;Bahan Pokok;27714;583;Ya;Tidak
+01/10/2021;Air Mineral 600ml;Minuman;3515;393;Tidak;Tidak
+01/10/2021;Beras 5kg;Bahan Pokok;67375;363;Tidak;Tidak
+01/10/2021;Bumbu Masak;Bahan Pokok;2573;89;Tidak;Ya
+01/10/2021;Es Krim;Makanan Beku;7924;286;Tidak;Tidak
+01/10/2021;Indomie Goreng;Makanan Instan;2881;442;Tidak;Tidak
+01/10/2021;Kopi Sachet;Minuman;1442;362;Tidak;Tidak
+01/10/2021;Mie Cup;Makanan Instan;4830;219;Tidak;Ya
+01/10/2021;Pembersih Lantai;Rumah Tangga;12531;284;Ya;Tidak
+01/10/2021;Rokok Filter;Rokok;33466;133;Tidak;Ya
+01/10/2021;Roti Tawar;Roti & Kue;15460;99;Ya;Ya
+01/10/2021;Sabun Mandi;Perawatan Diri;4389;85;Tidak;Ya
+01/10/2021;Saus Sambal;Bahan Pokok;7265;310;Tidak;Tidak
+01/10/2021;Shampo;Perawatan Diri;18721;149;Ya;Tidak
+01/10/2021;Sosis Kanzler;Makanan Beku;44717;268;Tidak;Tidak
+01/10/2021;Susu UHT 1L;Minuman;18058;211;Tidak;Ya
+01/10/2021;Teh Celup;Minuman;8330;376;Tidak;Ya
+01/11/2021;Baterai AA;Rumah Tangga;11579;188;Tidak;Ya
+01/11/2021;Beras 5kg;Bahan Pokok;66856;76;Tidak;Ya
+01/11/2021;Biskuit;Cemilan;10782;184;Tidak;Ya
+01/11/2021;Bumbu Masak;Bahan Pokok;2405;218;Ya;Tidak
+01/11/2021;Coklat Batang;Cemilan;13395;363;Tidak;Tidak
+01/11/2021;Deodoran;Perawatan Diri;22751;425;Ya;Tidak
+01/11/2021;Es Krim;Makanan Beku;8109;135;Tidak;Ya
+01/11/2021;Kopi Sachet;Minuman;1484;309;Ya;Tidak
+01/11/2021;Minyak Goreng 2L;Bahan Pokok;29766;619;Ya;Tidak
+01/11/2021;Nugget Ayam;Makanan Beku;49055;396;Tidak;Tidak
+01/11/2021;Obat Flu;Kesehatan;12106;416;Tidak;Tidak
+01/11/2021;Pasta Gigi;Perawatan Diri;9337;411;Tidak;Tidak
+01/11/2021;Popok Bayi;Bayi;56681;128;Ya;Ya
+01/11/2021;Roti Tawar;Roti & Kue;15430;144;Tidak;Tidak
+01/11/2021;Sabun Mandi;Perawatan Diri;4540;324;Tidak;Tidak
+01/11/2021;Saus Sambal;Bahan Pokok;7272;214;Tidak;Ya
+01/11/2021;Shampo;Perawatan Diri;18903;440;Tidak;Tidak
+01/11/2021;Sosis Kanzler;Makanan Beku;45382;259;Tidak;Tidak
+01/11/2021;Susu UHT 1L;Minuman;17180;95;Tidak;Ya
+01/12/2021;Beras 5kg;Bahan Pokok;64415;163;Ya;Tidak
+01/12/2021;Biskuit;Cemilan;10614;310;Ya;Tidak
+01/12/2021;Bumbu Masak;Bahan Pokok;2515;420;Tidak;Tidak
+01/12/2021;Coklat Batang;Cemilan;14543;417;Tidak;Tidak
+01/12/2021;Deterjen 1kg;Rumah Tangga;25538;331;Tidak;Tidak
+01/12/2021;Kecap Manis;Bahan Pokok;14388;51;Tidak;Ya
+01/12/2021;Kopi Sachet;Minuman;1518;422;Tidak;Tidak
+01/12/2021;Mie Cup;Makanan Instan;4950;212;Tidak;Tidak
+01/12/2021;Minyak Goreng 2L;Bahan Pokok;28701;407;Tidak;Ya
+01/12/2021;Nugget Ayam;Makanan Beku;46281;166;Tidak;Ya
+01/12/2021;Obat Flu;Kesehatan;12548;230;Tidak;Ya
+01/12/2021;Pasta Gigi;Perawatan Diri;8731;258;Ya;Ya
+01/12/2021;Rokok Filter;Rokok;31007;420;Tidak;Tidak
+01/12/2021;Roti Tawar;Roti & Kue;14803;422;Tidak;Tidak
+01/12/2021;Sabun Mandi;Perawatan Diri;4308;676;Ya;Tidak
+01/12/2021;Saus Sambal;Bahan Pokok;6883;140;Tidak;Ya
+01/12/2021;Shampo;Perawatan Diri;19114;418;Tidak;Tidak
+01/12/2021;Sosis Kanzler;Makanan Beku;47237;187;Tidak;Ya
+01/12/2021;Susu UHT 1L;Minuman;18785;433;Tidak;Tidak
+01/12/2021;Teh Celup;Minuman;8095;49;Tidak;Ya
+01/12/2021;Telur 1kg;Bahan Pokok;29298;333;Tidak;Ya
+01/12/2021;Tisu Wajah;Rumah Tangga;10322;46;Tidak;Tidak
+01/12/2021;Yogurt;Minuman;9249;409;Tidak;Ya
+01/01/2022;Air Mineral 600ml;Minuman;3394;194;Ya;Ya
+01/01/2022;Baterai AA;Rumah Tangga;11667;90;Ya;Ya
+01/01/2022;Biskuit;Cemilan;10817;267;Tidak;Tidak
+01/01/2022;Bumbu Masak;Bahan Pokok;2528;326;Tidak;Tidak
+01/01/2022;Coklat Batang;Cemilan;13983;588;Ya;Tidak
+01/01/2022;Deodoran;Perawatan Diri;22361;199;Tidak;Ya
+01/01/2022;Deterjen 1kg;Rumah Tangga;24099;163;Tidak;Ya
+01/01/2022;Indomie Goreng;Makanan Instan;2981;291;Tidak;Ya
+01/01/2022;Kopi Sachet;Minuman;1480;429;Tidak;Tidak
+01/01/2022;Minyak Goreng 2L;Bahan Pokok;31466;255;Ya;Ya
+01/01/2022;Obat Flu;Kesehatan;11871;235;Ya;Tidak
+01/01/2022;Pasta Gigi;Perawatan Diri;9109;80;Tidak;Ya
+01/01/2022;Pembersih Lantai;Rumah Tangga;12687;250;Tidak;Tidak
+01/01/2022;Rokok Filter;Rokok;30962;311;Ya;Ya
+01/01/2022;Sabun Mandi;Perawatan Diri;4498;158;Tidak;Ya
+01/01/2022;Saus Sambal;Bahan Pokok;7108;376;Tidak;Tidak
+01/01/2022;Shampo;Perawatan Diri;18278;349;Tidak;Tidak
+01/01/2022;Sosis Kanzler;Makanan Beku;46696;340;Tidak;Tidak
+01/01/2022;Susu UHT 1L;Minuman;17554;406;Tidak;Tidak
+01/01/2022;Teh Celup;Minuman;8012;199;Tidak;Tidak
+01/01/2022;Telur 1kg;Bahan Pokok;27712;156;Tidak;Ya
+01/02/2022;Air Mineral 600ml;Minuman;3556;715;Ya;Tidak
+01/02/2022;Baterai AA;Rumah Tangga;12221;317;Tidak;Tidak
+01/02/2022;Biskuit;Cemilan;10755;406;Tidak;Tidak
+01/02/2022;Bumbu Masak;Bahan Pokok;2450;88;Tidak;Ya
+01/02/2022;Coklat Batang;Cemilan;13813;418;Tidak;Ya
+01/02/2022;Deodoran;Perawatan Diri;22378;353;Tidak;Tidak
+01/02/2022;Deterjen 1kg;Rumah Tangga;24094;388;Ya;Tidak
+01/02/2022;Es Krim;Makanan Beku;8073;116;Tidak;Tidak
+01/02/2022;Kecap Manis;Bahan Pokok;14736;465;Ya;Tidak
+01/02/2022;Kopi Sachet;Minuman;1448;54;Tidak;Ya
+01/02/2022;Mie Cup;Makanan Instan;5157;256;Tidak;Tidak
+01/02/2022;Minyak Goreng 2L;Bahan Pokok;29731;124;Tidak;Ya
+01/02/2022;Nugget Ayam;Makanan Beku;48303;355;Tidak;Tidak
+01/02/2022;Obat Flu;Kesehatan;12163;33;Tidak;Ya
+01/02/2022;Pasta Gigi;Perawatan Diri;9166;367;Tidak;Tidak
+01/02/2022;Pembersih Lantai;Rumah Tangga;13645;244;Tidak;Tidak
+01/02/2022;Popok Bayi;Bayi;53058;111;Tidak;Tidak
+01/02/2022;Rokok Filter;Rokok;32505;222;Tidak;Ya
+01/02/2022;Roti Tawar;Roti & Kue;15217;218;Tidak;Ya
+01/02/2022;Sabun Mandi;Perawatan Diri;4549;410;Tidak;Tidak
+01/02/2022;Saus Sambal;Bahan Pokok;6929;112;Tidak;Ya
+01/02/2022;Shampo;Perawatan Diri;19837;105;Tidak;Ya
+01/02/2022;Sosis Kanzler;Makanan Beku;45081;509;Ya;Tidak
+01/02/2022;Susu UHT 1L;Minuman;17735;445;Tidak;Tidak
+01/02/2022;Teh Celup;Minuman;7947;224;Tidak;Tidak
+01/02/2022;Telur 1kg;Bahan Pokok;27950;205;Tidak;Tidak
+01/02/2022;Tisu Wajah;Rumah Tangga;9662;209;Ya;Tidak
+01/02/2022;Yogurt;Minuman;8676;97;Tidak;Ya
+01/03/2022;Air Mineral 600ml;Minuman;3472;316;Tidak;Ya
+01/03/2022;Baterai AA;Rumah Tangga;12419;399;Tidak;Tidak
+01/03/2022;Beras 5kg;Bahan Pokok;65949;290;Tidak;Tidak
+01/03/2022;Biskuit;Cemilan;11027;223;Tidak;Ya
+01/03/2022;Bumbu Masak;Bahan Pokok;2553;296;Tidak;Tidak
+01/03/2022;Coklat Batang;Cemilan;14639;151;Tidak;Ya
+01/03/2022;Deodoran;Perawatan Diri;22243;332;Tidak;Tidak
+01/03/2022;Deterjen 1kg;Rumah Tangga;25012;95;Tidak;Ya
+01/03/2022;Es Krim;Makanan Beku;7720;339;Tidak;Tidak
+01/03/2022;Kopi Sachet;Minuman;1487;376;Tidak;Tidak
+01/03/2022;Mie Cup;Makanan Instan;5232;125;Tidak;Ya
+01/03/2022;Minyak Goreng 2L;Bahan Pokok;31047;258;Tidak;Tidak
+01/03/2022;Nugget Ayam;Makanan Beku;48843;136;Tidak;Ya
+01/03/2022;Popok Bayi;Bayi;53615;571;Ya;Tidak
+01/03/2022;Roti Tawar;Roti & Kue;15136;481;Ya;Tidak
+01/03/2022;Sabun Mandi;Perawatan Diri;4293;322;Tidak;Tidak
+01/03/2022;Saus Sambal;Bahan Pokok;6968;391;Tidak;Tidak
+01/03/2022;Shampo;Perawatan Diri;19057;91;Tidak;Tidak
+01/03/2022;Yogurt;Minuman;8628;389;Tidak;Tidak
+01/04/2022;Air Mineral 600ml;Minuman;3541;280;Tidak;Tidak
+01/04/2022;Baterai AA;Rumah Tangga;11444;642;Ya;Tidak
+01/04/2022;Beras 5kg;Bahan Pokok;66356;139;Tidak;Ya
+01/04/2022;Biskuit;Cemilan;10790;365;Ya;Tidak
+01/04/2022;Deodoran;Perawatan Diri;22451;210;Tidak;Ya
+01/04/2022;Deterjen 1kg;Rumah Tangga;25827;359;Ya;Tidak
+01/04/2022;Es Krim;Makanan Beku;8118;621;Ya;Tidak
+01/04/2022;Indomie Goreng;Makanan Instan;3093;149;Tidak;Ya
+01/04/2022;Kecap Manis;Bahan Pokok;15160;561;Ya;Tidak
+01/04/2022;Kopi Sachet;Minuman;1555;302;Tidak;Tidak
+01/04/2022;Minyak Goreng 2L;Bahan Pokok;29428;322;Tidak;Tidak
+01/04/2022;Nugget Ayam;Makanan Beku;48211;155;Tidak;Tidak
+01/04/2022;Obat Flu;Kesehatan;12279;47;Tidak;Tidak
+01/04/2022;Pasta Gigi;Perawatan Diri;8929;597;Ya;Tidak
+01/04/2022;Popok Bayi;Bayi;53639;327;Ya;Ya
+01/04/2022;Rokok Filter;Rokok;32361;207;Ya;Tidak
+01/04/2022;Roti Tawar;Roti & Kue;15634;242;Tidak;Ya
+01/04/2022;Sabun Mandi;Perawatan Diri;4476;73;Tidak;Ya
+01/04/2022;Saus Sambal;Bahan Pokok;6834;307;Tidak;Tidak
+01/04/2022;Shampo;Perawatan Diri;18746;424;Tidak;Tidak
+01/04/2022;Susu UHT 1L;Minuman;18093;117;Tidak;Ya
+01/04/2022;Telur 1kg;Bahan Pokok;26909;335;Tidak;Tidak
+01/04/2022;Tisu Wajah;Rumah Tangga;10349;65;Tidak;Ya
+01/05/2022;Baterai AA;Rumah Tangga;12169;257;Tidak;Ya
+01/05/2022;Beras 5kg;Bahan Pokok;67176;97;Tidak;Ya
+01/05/2022;Biskuit;Cemilan;11083;141;Ya;Ya
+01/05/2022;Bumbu Masak;Bahan Pokok;2385;95;Tidak;Ya
+01/05/2022;Coklat Batang;Cemilan;13974;390;Tidak;Tidak
+01/05/2022;Deodoran;Perawatan Diri;21435;174;Tidak;Tidak
+01/05/2022;Es Krim;Makanan Beku;7695;223;Tidak;Ya
+01/05/2022;Indomie Goreng;Makanan Instan;2936;282;Tidak;Tidak
+01/05/2022;Kopi Sachet;Minuman;1476;287;Tidak;Tidak
+01/05/2022;Mie Cup;Makanan Instan;5194;341;Tidak;Tidak
+01/05/2022;Minyak Goreng 2L;Bahan Pokok;28955;71;Ya;Ya
+01/05/2022;Nugget Ayam;Makanan Beku;46850;34;Tidak;Ya
+01/05/2022;Obat Flu;Kesehatan;11953;134;Tidak;Tidak
+01/05/2022;Pasta Gigi;Perawatan Diri;8650;421;Ya;Ya
+01/05/2022;Pembersih Lantai;Rumah Tangga;12408;352;Tidak;Tidak
+01/05/2022;Popok Bayi;Bayi;54288;71;Tidak;Ya
+01/05/2022;Rokok Filter;Rokok;31772;538;Ya;Tidak
+01/05/2022;Roti Tawar;Roti & Kue;14962;84;Ya;Ya
+01/05/2022;Sabun Mandi;Perawatan Diri;4495;604;Ya;Tidak
+01/05/2022;Shampo;Perawatan Diri;18304;431;Tidak;Tidak
+01/05/2022;Susu UHT 1L;Minuman;18140;172;Ya;Tidak
+01/05/2022;Teh Celup;Minuman;7702;74;Tidak;Ya
+01/05/2022;Telur 1kg;Bahan Pokok;26905;324;Tidak;Tidak
+01/05/2022;Tisu Wajah;Rumah Tangga;9714;308;Ya;Tidak
+01/05/2022;Yogurt;Minuman;9357;146;Ya;Ya
+01/06/2022;Air Mineral 600ml;Minuman;3414;297;Ya;Tidak
+01/06/2022;Bumbu Masak;Bahan Pokok;2620;179;Tidak;Tidak
+01/06/2022;Deterjen 1kg;Rumah Tangga;23814;117;Tidak;Ya
+01/06/2022;Indomie Goreng;Makanan Instan;3118;263;Tidak;Tidak
+01/06/2022;Kecap Manis;Bahan Pokok;14708;381;Tidak;Ya
+01/06/2022;Kopi Sachet;Minuman;1479;238;Tidak;Tidak
+01/06/2022;Mie Cup;Makanan Instan;5245;296;Tidak;Tidak
+01/06/2022;Nugget Ayam;Makanan Beku;47330;391;Tidak;Tidak
+01/06/2022;Obat Flu;Kesehatan;12400;111;Ya;Tidak
+01/06/2022;Pasta Gigi;Perawatan Diri;9118;430;Tidak;Tidak
+01/06/2022;Pembersih Lantai;Rumah Tangga;13404;49;Tidak;Ya
+01/06/2022;Rokok Filter;Rokok;30896;274;Tidak;Ya
+01/06/2022;Sabun Mandi;Perawatan Diri;4637;213;Tidak;Ya
+01/06/2022;Shampo;Perawatan Diri;19496;242;Tidak;Ya
+01/06/2022;Sosis Kanzler;Makanan Beku;45635;306;Tidak;Ya
+01/06/2022;Telur 1kg;Bahan Pokok;28183;265;Tidak;Tidak
+01/06/2022;Tisu Wajah;Rumah Tangga;9888;407;Tidak;Tidak
+01/07/2022;Air Mineral 600ml;Minuman;3652;480;Ya;Tidak
+01/07/2022;Baterai AA;Rumah Tangga;11506;165;Tidak;Ya
+01/07/2022;Beras 5kg;Bahan Pokok;63862;241;Tidak;Tidak
+01/07/2022;Bumbu Masak;Bahan Pokok;2471;37;Tidak;Ya
+01/07/2022;Coklat Batang;Cemilan;14678;55;Tidak;Ya
+01/07/2022;Deodoran;Perawatan Diri;22082;219;Tidak;Tidak
+01/07/2022;Deterjen 1kg;Rumah Tangga;25923;352;Tidak;Tidak
+01/07/2022;Es Krim;Makanan Beku;7743;54;Tidak;Ya
+01/07/2022;Indomie Goreng;Makanan Instan;2939;139;Ya;Ya
+01/07/2022;Kopi Sachet;Minuman;1530;434;Tidak;Tidak
+01/07/2022;Mie Cup;Makanan Instan;5237;321;Tidak;Tidak
+01/07/2022;Pasta Gigi;Perawatan Diri;9141;627;Ya;Tidak
+01/07/2022;Popok Bayi;Bayi;52599;44;Tidak;Ya
+01/07/2022;Rokok Filter;Rokok;33291;198;Tidak;Ya
+01/07/2022;Roti Tawar;Roti & Kue;15501;150;Tidak;Tidak
+01/07/2022;Shampo;Perawatan Diri;18196;123;Tidak;Ya
+01/07/2022;Sosis Kanzler;Makanan Beku;43776;415;Tidak;Tidak
+01/07/2022;Susu UHT 1L;Minuman;18862;336;Tidak;Tidak
+01/07/2022;Teh Celup;Minuman;8050;368;Ya;Tidak
+01/07/2022;Telur 1kg;Bahan Pokok;29197;167;Tidak;Ya
+01/07/2022;Tisu Wajah;Rumah Tangga;9612;218;Tidak;Ya
+01/07/2022;Yogurt;Minuman;9182;228;Ya;Tidak
+01/08/2022;Air Mineral 600ml;Minuman;3511;257;Tidak;Ya
+01/08/2022;Baterai AA;Rumah Tangga;12280;337;Tidak;Tidak
+01/08/2022;Biskuit;Cemilan;11539;345;Tidak;Tidak
+01/08/2022;Bumbu Masak;Bahan Pokok;2454;233;Ya;Tidak
+01/08/2022;Coklat Batang;Cemilan;14335;261;Tidak;Tidak
+01/08/2022;Deodoran;Perawatan Diri;21644;234;Tidak;Tidak
+01/08/2022;Deterjen 1kg;Rumah Tangga;25511;300;Tidak;Tidak
+01/08/2022;Es Krim;Makanan Beku;7712;449;Tidak;Tidak
+01/08/2022;Indomie Goreng;Makanan Instan;3139;67;Tidak;Ya
+01/08/2022;Kecap Manis;Bahan Pokok;14794;85;Tidak;Ya
+01/08/2022;Kopi Sachet;Minuman;1561;362;Tidak;Tidak
+01/08/2022;Mie Cup;Makanan Instan;4806;77;Tidak;Ya
+01/08/2022;Minyak Goreng 2L;Bahan Pokok;28714;349;Tidak;Tidak
+01/08/2022;Nugget Ayam;Makanan Beku;50247;145;Tidak;Ya
+01/08/2022;Obat Flu;Kesehatan;12099;232;Tidak;Tidak
+01/08/2022;Pasta Gigi;Perawatan Diri;9077;269;Tidak;Ya
+01/08/2022;Popok Bayi;Bayi;56008;257;Tidak;Tidak
+01/08/2022;Rokok Filter;Rokok;32395;446;Tidak;Tidak
+01/08/2022;Sabun Mandi;Perawatan Diri;4474;435;Tidak;Tidak
+01/08/2022;Saus Sambal;Bahan Pokok;6732;147;Tidak;Ya
+01/08/2022;Shampo;Perawatan Diri;19387;223;Ya;Tidak
+01/08/2022;Sosis Kanzler;Makanan Beku;44303;248;Tidak;Ya
+01/08/2022;Susu UHT 1L;Minuman;18617;164;Ya;Ya
+01/08/2022;Tisu Wajah;Rumah Tangga;10454;587;Ya;Tidak
+01/08/2022;Yogurt;Minuman;8900;93;Ya;Ya
+01/09/2022;Air Mineral 600ml;Minuman;3573;73;Tidak;Ya
+01/09/2022;Baterai AA;Rumah Tangga;12011;273;Tidak;Tidak
+01/09/2022;Beras 5kg;Bahan Pokok;66928;292;Tidak;Tidak
+01/09/2022;Biskuit;Cemilan;11189;145;Tidak;Ya
+01/09/2022;Bumbu Masak;Bahan Pokok;2507;65;Tidak;Ya
+01/09/2022;Coklat Batang;Cemilan;13604;137;Tidak;Ya
+01/09/2022;Deterjen 1kg;Rumah Tangga;24853;397;Tidak;Tidak
+01/09/2022;Indomie Goreng;Makanan Instan;2898;247;Tidak;Tidak
+01/09/2022;Kecap Manis;Bahan Pokok;14462;266;Tidak;Tidak
+01/09/2022;Minyak Goreng 2L;Bahan Pokok;30950;105;Ya;Ya
+01/09/2022;Nugget Ayam;Makanan Beku;47791;373;Tidak;Tidak
+01/09/2022;Pasta Gigi;Perawatan Diri;8806;415;Tidak;Tidak
+01/09/2022;Pembersih Lantai;Rumah Tangga;13320;394;Ya;Tidak
+01/09/2022;Rokok Filter;Rokok;31691;354;Tidak;Tidak
+01/09/2022;Roti Tawar;Roti & Kue;15030;129;Tidak;Tidak
+01/09/2022;Saus Sambal;Bahan Pokok;7188;151;Tidak;Tidak
+01/09/2022;Shampo;Perawatan Diri;18314;381;Tidak;Tidak
+01/09/2022;Sosis Kanzler;Makanan Beku;45023;511;Ya;Tidak
+01/09/2022;Susu UHT 1L;Minuman;17984;406;Tidak;Tidak
+01/09/2022;Teh Celup;Minuman;7631;444;Tidak;Tidak
+01/09/2022;Telur 1kg;Bahan Pokok;27107;264;Tidak;Tidak
+01/09/2022;Tisu Wajah;Rumah Tangga;9713;261;Tidak;Ya
+01/09/2022;Yogurt;Minuman;8720;226;Tidak;Tidak
+01/10/2022;Air Mineral 600ml;Minuman;3609;146;Tidak;Tidak
+01/10/2022;Baterai AA;Rumah Tangga;12162;359;Tidak;Tidak
+01/10/2022;Beras 5kg;Bahan Pokok;65980;238;Tidak;Tidak
+01/10/2022;Biskuit;Cemilan;11046;504;Ya;Tidak
+01/10/2022;Coklat Batang;Cemilan;14519;278;Tidak;Tidak
+01/10/2022;Deodoran;Perawatan Diri;21507;301;Tidak;Tidak
+01/10/2022;Es Krim;Makanan Beku;8399;455;Ya;Tidak
+01/10/2022;Indomie Goreng;Makanan Instan;2953;419;Tidak;Tidak
+01/10/2022;Kecap Manis;Bahan Pokok;15053;374;Tidak;Tidak
+01/10/2022;Kopi Sachet;Minuman;1555;200;Tidak;Ya
+01/10/2022;Mie Cup;Makanan Instan;5222;169;Tidak;Tidak
+01/10/2022;Minyak Goreng 2L;Bahan Pokok;30594;414;Ya;Tidak
+01/10/2022;Nugget Ayam;Makanan Beku;46686;100;Tidak;Ya
+01/10/2022;Pasta Gigi;Perawatan Diri;8686;268;Ya;Ya
+01/10/2022;Pembersih Lantai;Rumah Tangga;12903;239;Tidak;Ya
+01/10/2022;Rokok Filter;Rokok;32868;436;Tidak;Tidak
+01/10/2022;Roti Tawar;Roti & Kue;15632;173;Ya;Tidak
+01/10/2022;Sabun Mandi;Perawatan Diri;4656;310;Ya;Ya
+01/10/2022;Saus Sambal;Bahan Pokok;6725;257;Tidak;Tidak
+01/10/2022;Shampo;Perawatan Diri;18470;651;Ya;Tidak
+01/10/2022;Sosis Kanzler;Makanan Beku;44067;619;Ya;Tidak
+01/10/2022;Susu UHT 1L;Minuman;17837;133;Tidak;Ya
+01/10/2022;Teh Celup;Minuman;8223;108;Tidak;Ya
+01/10/2022;Telur 1kg;Bahan Pokok;27111;208;Tidak;Tidak
+01/10/2022;Tisu Wajah;Rumah Tangga;10274;186;Tidak;Ya
+01/10/2022;Yogurt;Minuman;9197;136;Tidak;Ya
+01/11/2022;Air Mineral 600ml;Minuman;3648;390;Tidak;Tidak
+01/11/2022;Baterai AA;Rumah Tangga;12436;257;Tidak;Ya
+01/11/2022;Beras 5kg;Bahan Pokok;67496;111;Tidak;Ya
+01/11/2022;Bumbu Masak;Bahan Pokok;2517;46;Tidak;Ya
+01/11/2022;Coklat Batang;Cemilan;13635;78;Tidak;Ya
+01/11/2022;Deterjen 1kg;Rumah Tangga;26044;51;Tidak;Ya
+01/11/2022;Es Krim;Makanan Beku;7796;189;Tidak;Ya
+01/11/2022;Mie Cup;Makanan Instan;5030;323;Tidak;Tidak
+01/11/2022;Minyak Goreng 2L;Bahan Pokok;29978;422;Tidak;Tidak
+01/11/2022;Obat Flu;Kesehatan;12320;285;Tidak;Tidak
+01/11/2022;Pembersih Lantai;Rumah Tangga;13070;219;Tidak;Tidak
+01/11/2022;Rokok Filter;Rokok;31932;92;Tidak;Ya
+01/11/2022;Sabun Mandi;Perawatan Diri;4664;109;Tidak;Ya
+01/11/2022;Shampo;Perawatan Diri;19516;355;Tidak;Ya
+01/11/2022;Sosis Kanzler;Makanan Beku;46080;354;Ya;Ya
+01/11/2022;Susu UHT 1L;Minuman;17454;175;Tidak;Tidak
+01/11/2022;Telur 1kg;Bahan Pokok;29067;220;Tidak;Tidak
+01/11/2022;Tisu Wajah;Rumah Tangga;9987;249;Tidak;Tidak
+01/12/2022;Air Mineral 600ml;Minuman;3345;84;Tidak;Ya
+01/12/2022;Baterai AA;Rumah Tangga;11684;334;Tidak;Tidak
+01/12/2022;Beras 5kg;Bahan Pokok;65491;289;Ya;Tidak
+01/12/2022;Deodoran;Perawatan Diri;21065;565;Ya;Tidak
+01/12/2022;Deterjen 1kg;Rumah Tangga;24420;91;Tidak;Tidak
+01/12/2022;Es Krim;Makanan Beku;7662;345;Ya;Tidak
+01/12/2022;Indomie Goreng;Makanan Instan;2892;262;Tidak;Ya
+01/12/2022;Kecap Manis;Bahan Pokok;14637;351;Tidak;Tidak
+01/12/2022;Mie Cup;Makanan Instan;4858;254;Tidak;Tidak
+01/12/2022;Nugget Ayam;Makanan Beku;46327;168;Ya;Tidak
+01/12/2022;Obat Flu;Kesehatan;11476;538;Ya;Tidak
+01/12/2022;Pasta Gigi;Perawatan Diri;8636;212;Tidak;Tidak
+01/12/2022;Pembersih Lantai;Rumah Tangga;12976;306;Tidak;Tidak
+01/12/2022;Popok Bayi;Bayi;53786;100;Tidak;Ya
+01/12/2022;Rokok Filter;Rokok;32972;409;Ya;Tidak
+01/12/2022;Sabun Mandi;Perawatan Diri;4481;47;Tidak;Ya
+01/12/2022;Saus Sambal;Bahan Pokok;7194;592;Ya;Tidak
+01/12/2022;Shampo;Perawatan Diri;19551;677;Ya;Tidak
+01/12/2022;Sosis Kanzler;Makanan Beku;44640;442;Tidak;Tidak
+01/12/2022;Susu UHT 1L;Minuman;18452;184;Ya;Tidak
+01/12/2022;Teh Celup;Minuman;7995;391;Tidak;Tidak
+01/12/2022;Telur 1kg;Bahan Pokok;29302;237;Tidak;Tidak
+01/12/2022;Tisu Wajah;Rumah Tangga;9677;304;Ya;Tidak
+01/12/2022;Yogurt;Minuman;8815;193;Tidak;Tidak
+01/01/2023;Air Mineral 600ml;Minuman;3407;391;Tidak;Tidak
+01/01/2023;Baterai AA;Rumah Tangga;12390;158;Tidak;Ya
+01/01/2023;Beras 5kg;Bahan Pokok;65685;333;Tidak;Tidak
+01/01/2023;Biskuit;Cemilan;11107;297;Ya;Ya
+01/01/2023;Bumbu Masak;Bahan Pokok;2392;567;Ya;Tidak
+01/01/2023;Coklat Batang;Cemilan;13372;452;Ya;Tidak
+01/01/2023;Deodoran;Perawatan Diri;21054;342;Tidak;Ya
+01/01/2023;Deterjen 1kg;Rumah Tangga;24614;180;Ya;Tidak
+01/01/2023;Mie Cup;Makanan Instan;4869;554;Ya;Tidak
+01/01/2023;Minyak Goreng 2L;Bahan Pokok;30920;177;Tidak;Ya
+01/01/2023;Nugget Ayam;Makanan Beku;49777;230;Ya;Tidak
+01/01/2023;Obat Flu;Kesehatan;12412;500;Ya;Tidak
+01/01/2023;Pasta Gigi;Perawatan Diri;8673;419;Ya;Tidak
+01/01/2023;Popok Bayi;Bayi;56914;138;Tidak;Tidak
+01/01/2023;Roti Tawar;Roti & Kue;14368;500;Ya;Tidak
+01/01/2023;Shampo;Perawatan Diri;19602;349;Tidak;Ya
+01/01/2023;Susu UHT 1L;Minuman;18217;188;Tidak;Tidak
+01/01/2023;Teh Celup;Minuman;7985;423;Tidak;Tidak
+01/02/2023;Air Mineral 600ml;Minuman;3633;176;Tidak;Ya
+01/02/2023;Baterai AA;Rumah Tangga;11565;333;Tidak;Tidak
+01/02/2023;Beras 5kg;Bahan Pokok;63833;99;Ya;Ya
+01/02/2023;Biskuit;Cemilan;11074;64;Tidak;Ya
+01/02/2023;Coklat Batang;Cemilan;14269;438;Tidak;Tidak
+01/02/2023;Deodoran;Perawatan Diri;20901;440;Tidak;Tidak
+01/02/2023;Es Krim;Makanan Beku;7666;209;Tidak;Ya
+01/02/2023;Indomie Goreng;Makanan Instan;3073;423;Tidak;Tidak
+01/02/2023;Kecap Manis;Bahan Pokok;15114;389;Tidak;Tidak
+01/02/2023;Kopi Sachet;Minuman;1549;123;Tidak;Ya
+01/02/2023;Nugget Ayam;Makanan Beku;46682;696;Ya;Tidak
+01/02/2023;Obat Flu;Kesehatan;12498;64;Tidak;Ya
+01/02/2023;Pasta Gigi;Perawatan Diri;8813;78;Tidak;Ya
+01/02/2023;Roti Tawar;Roti & Kue;15374;422;Tidak;Tidak
+01/02/2023;Saus Sambal;Bahan Pokok;6817;380;Tidak;Ya
+01/02/2023;Shampo;Perawatan Diri;18664;338;Tidak;Tidak
+01/02/2023;Sosis Kanzler;Makanan Beku;45840;426;Tidak;Tidak
+01/02/2023;Susu UHT 1L;Minuman;18583;295;Tidak;Tidak
+01/02/2023;Teh Celup;Minuman;7702;151;Tidak;Ya
+01/02/2023;Telur 1kg;Bahan Pokok;29322;166;Tidak;Ya
+01/02/2023;Tisu Wajah;Rumah Tangga;10487;58;Tidak;Ya
+01/02/2023;Yogurt;Minuman;9225;182;Tidak;Tidak
+01/03/2023;Air Mineral 600ml;Minuman;3460;309;Ya;Tidak
+01/03/2023;Baterai AA;Rumah Tangga;12271;168;Tidak;Ya
+01/03/2023;Bumbu Masak;Bahan Pokok;2619;108;Tidak;Ya
+01/03/2023;Deodoran;Perawatan Diri;23085;181;Tidak;Ya
+01/03/2023;Es Krim;Makanan Beku;8209;239;Tidak;Tidak
+01/03/2023;Indomie Goreng;Makanan Instan;2877;202;Tidak;Ya
+01/03/2023;Kopi Sachet;Minuman;1531;324;Ya;Tidak
+01/03/2023;Mie Cup;Makanan Instan;4829;231;Tidak;Ya
+01/03/2023;Minyak Goreng 2L;Bahan Pokok;29194;628;Ya;Tidak
+01/03/2023;Nugget Ayam;Makanan Beku;47579;56;Tidak;Ya
+01/03/2023;Obat Flu;Kesehatan;11772;336;Tidak;Tidak
+01/03/2023;Pasta Gigi;Perawatan Diri;9407;290;Tidak;Tidak
+01/03/2023;Pembersih Lantai;Rumah Tangga;12612;201;Tidak;Ya
+01/03/2023;Rokok Filter;Rokok;33541;244;Ya;Ya
+01/03/2023;Roti Tawar;Roti & Kue;15706;106;Tidak;Ya
+01/03/2023;Saus Sambal;Bahan Pokok;6850;418;Tidak;Tidak
+01/03/2023;Shampo;Perawatan Diri;18432;418;Ya;Tidak
+01/03/2023;Sosis Kanzler;Makanan Beku;45466;253;Tidak;Ya
+01/03/2023;Susu UHT 1L;Minuman;17421;269;Tidak;Tidak
+01/03/2023;Teh Celup;Minuman;7744;340;Tidak;Tidak
+01/03/2023;Telur 1kg;Bahan Pokok;26621;401;Tidak;Tidak
+01/03/2023;Tisu Wajah;Rumah Tangga;9576;289;Ya;Tidak
+01/03/2023;Yogurt;Minuman;9066;167;Tidak;Tidak
+01/04/2023;Air Mineral 600ml;Minuman;3342;378;Tidak;Tidak
+01/04/2023;Baterai AA;Rumah Tangga;12078;85;Ya;Ya
+01/04/2023;Beras 5kg;Bahan Pokok;62675;404;Tidak;Tidak
+01/04/2023;Biskuit;Cemilan;10488;354;Tidak;Tidak
+01/04/2023;Bumbu Masak;Bahan Pokok;2511;416;Tidak;Tidak
+01/04/2023;Deterjen 1kg;Rumah Tangga;25635;405;Tidak;Tidak
+01/04/2023;Es Krim;Makanan Beku;7741;106;Tidak;Ya
+01/04/2023;Indomie Goreng;Makanan Instan;3095;286;Tidak;Tidak
+01/04/2023;Mie Cup;Makanan Instan;4931;74;Tidak;Ya
+01/04/2023;Minyak Goreng 2L;Bahan Pokok;29913;267;Tidak;Ya
+01/04/2023;Nugget Ayam;Makanan Beku;45729;450;Ya;Tidak
+01/04/2023;Popok Bayi;Bayi;53453;97;Tidak;Ya
+01/04/2023;Rokok Filter;Rokok;32655;79;Tidak;Ya
+01/04/2023;Roti Tawar;Roti & Kue;15344;365;Tidak;Tidak
+01/04/2023;Sabun Mandi;Perawatan Diri;4316;379;Tidak;Tidak
+01/04/2023;Saus Sambal;Bahan Pokok;7099;415;Tidak;Tidak
+01/04/2023;Shampo;Perawatan Diri;18421;231;Tidak;Ya
+01/04/2023;Sosis Kanzler;Makanan Beku;46802;665;Ya;Tidak
+01/04/2023;Susu UHT 1L;Minuman;17563;85;Tidak;Ya
+01/04/2023;Telur 1kg;Bahan Pokok;27963;83;Tidak;Ya
+01/04/2023;Tisu Wajah;Rumah Tangga;9997;111;Ya;Ya
+01/04/2023;Yogurt;Minuman;9362;281;Tidak;Tidak
+01/05/2023;Baterai AA;Rumah Tangga;11885;108;Tidak;Tidak
+01/05/2023;Biskuit;Cemilan;11485;328;Tidak;Tidak
+01/05/2023;Coklat Batang;Cemilan;13404;182;Ya;Ya
+01/05/2023;Deterjen 1kg;Rumah Tangga;26030;185;Tidak;Ya
+01/05/2023;Es Krim;Makanan Beku;7659;286;Tidak;Tidak
+01/05/2023;Indomie Goreng;Makanan Instan;3071;400;Tidak;Tidak
+01/05/2023;Kecap Manis;Bahan Pokok;15333;329;Tidak;Tidak
+01/05/2023;Mie Cup;Makanan Instan;5241;367;Tidak;Tidak
+01/05/2023;Minyak Goreng 2L;Bahan Pokok;31065;353;Tidak;Tidak
+01/05/2023;Pasta Gigi;Perawatan Diri;9055;432;Tidak;Tidak
+01/05/2023;Pembersih Lantai;Rumah Tangga;13034;210;Ya;Tidak
+01/05/2023;Popok Bayi;Bayi;56644;297;Tidak;Tidak
+01/05/2023;Sabun Mandi;Perawatan Diri;4658;258;Ya;Ya
+01/05/2023;Shampo;Perawatan Diri;19262;325;Tidak;Tidak
+01/05/2023;Sosis Kanzler;Makanan Beku;46208;94;Ya;Ya
+01/05/2023;Susu UHT 1L;Minuman;18725;83;Tidak;Tidak
+01/05/2023;Teh Celup;Minuman;7942;250;Tidak;Ya
+01/05/2023;Telur 1kg;Bahan Pokok;29092;325;Tidak;Tidak
+01/05/2023;Yogurt;Minuman;8663;168;Tidak;Ya
+01/06/2023;Air Mineral 600ml;Minuman;3582;191;Tidak;Ya
+01/06/2023;Baterai AA;Rumah Tangga;11584;296;Tidak;Tidak
+01/06/2023;Biskuit;Cemilan;10769;335;Tidak;Tidak
+01/06/2023;Bumbu Masak;Bahan Pokok;2567;240;Ya;Ya
+01/06/2023;Es Krim;Makanan Beku;7613;310;Tidak;Tidak
+01/06/2023;Indomie Goreng;Makanan Instan;3076;153;Tidak;Ya
+01/06/2023;Minyak Goreng 2L;Bahan Pokok;29182;300;Tidak;Tidak
+01/06/2023;Nugget Ayam;Makanan Beku;46293;256;Tidak;Ya
+01/06/2023;Obat Flu;Kesehatan;11415;32;Tidak;Ya
+01/06/2023;Pasta Gigi;Perawatan Diri;9146;671;Ya;Tidak
+01/06/2023;Pembersih Lantai;Rumah Tangga;13038;730;Ya;Tidak
+01/06/2023;Rokok Filter;Rokok;33185;359;Ya;Tidak
+01/06/2023;Sabun Mandi;Perawatan Diri;4477;593;Ya;Tidak
+01/06/2023;Shampo;Perawatan Diri;18177;97;Ya;Ya
+01/06/2023;Sosis Kanzler;Makanan Beku;46104;95;Tidak;Tidak
+01/06/2023;Susu UHT 1L;Minuman;18349;630;Ya;Tidak
+01/06/2023;Teh Celup;Minuman;8116;150;Ya;Ya
+01/06/2023;Telur 1kg;Bahan Pokok;29184;606;Ya;Tidak
+01/06/2023;Tisu Wajah;Rumah Tangga;9699;297;Tidak;Tidak
+01/06/2023;Yogurt;Minuman;9285;363;Ya;Tidak
+01/07/2023;Air Mineral 600ml;Minuman;3470;60;Tidak;Ya
+01/07/2023;Baterai AA;Rumah Tangga;12523;301;Tidak;Tidak
+01/07/2023;Beras 5kg;Bahan Pokok;63056;447;Tidak;Tidak
+01/07/2023;Biskuit;Cemilan;11057;216;Tidak;Ya
+01/07/2023;Bumbu Masak;Bahan Pokok;2446;495;Ya;Tidak
+01/07/2023;Coklat Batang;Cemilan;13395;373;Tidak;Tidak
+01/07/2023;Deodoran;Perawatan Diri;23064;489;Ya;Tidak
+01/07/2023;Deterjen 1kg;Rumah Tangga;24830;435;Tidak;Tidak
+01/07/2023;Indomie Goreng;Makanan Instan;2909;187;Tidak;Tidak
+01/07/2023;Kopi Sachet;Minuman;1464;334;Tidak;Tidak
+01/07/2023;Mie Cup;Makanan Instan;5059;429;Tidak;Tidak
+01/07/2023;Minyak Goreng 2L;Bahan Pokok;30348;48;Tidak;Ya
+01/07/2023;Obat Flu;Kesehatan;12170;328;Ya;Tidak
+01/07/2023;Pasta Gigi;Perawatan Diri;8964;383;Ya;Ya
+01/07/2023;Pembersih Lantai;Rumah Tangga;13472;145;Tidak;Ya
+01/07/2023;Popok Bayi;Bayi;53813;282;Tidak;Tidak
+01/07/2023;Rokok Filter;Rokok;32203;139;Tidak;Ya
+01/07/2023;Roti Tawar;Roti & Kue;15085;140;Tidak;Ya
+01/07/2023;Sabun Mandi;Perawatan Diri;4692;76;Tidak;Ya
+01/07/2023;Saus Sambal;Bahan Pokok;7215;173;Tidak;Ya
+01/07/2023;Shampo;Perawatan Diri;19663;243;Tidak;Tidak
+01/07/2023;Sosis Kanzler;Makanan Beku;44948;276;Tidak;Tidak
+01/07/2023;Susu UHT 1L;Minuman;17180;252;Tidak;Ya
+01/07/2023;Teh Celup;Minuman;7985;105;Tidak;Ya
+01/07/2023;Telur 1kg;Bahan Pokok;28866;131;Ya;Ya
+01/07/2023;Tisu Wajah;Rumah Tangga;10112;363;Tidak;Tidak
+01/07/2023;Yogurt;Minuman;9386;211;Ya;Ya
+01/08/2023;Baterai AA;Rumah Tangga;12041;313;Tidak;Tidak
+01/08/2023;Biskuit;Cemilan;11064;432;Tidak;Tidak
+01/08/2023;Bumbu Masak;Bahan Pokok;2393;463;Ya;Tidak
+01/08/2023;Coklat Batang;Cemilan;14173;334;Tidak;Tidak
+01/08/2023;Deodoran;Perawatan Diri;22852;30;Tidak;Ya
+01/08/2023;Es Krim;Makanan Beku;7768;194;Tidak;Ya
+01/08/2023;Kecap Manis;Bahan Pokok;14882;325;Ya;Tidak
+01/08/2023;Kopi Sachet;Minuman;1439;218;Tidak;Ya
+01/08/2023;Mie Cup;Makanan Instan;4784;329;Tidak;Tidak
+01/08/2023;Minyak Goreng 2L;Bahan Pokok;28641;550;Ya;Tidak
+01/08/2023;Nugget Ayam;Makanan Beku;48253;280;Tidak;Tidak
+01/08/2023;Pasta Gigi;Perawatan Diri;8719;224;Tidak;Ya
+01/08/2023;Pembersih Lantai;Rumah Tangga;13128;413;Tidak;Tidak
+01/08/2023;Rokok Filter;Rokok;33534;367;Tidak;Tidak
+01/08/2023;Roti Tawar;Roti & Kue;15110;682;Ya;Tidak
+01/08/2023;Saus Sambal;Bahan Pokok;6833;329;Tidak;Tidak
+01/08/2023;Sosis Kanzler;Makanan Beku;42783;294;Tidak;Tidak
+01/08/2023;Telur 1kg;Bahan Pokok;27953;340;Tidak;Tidak
+01/09/2023;Air Mineral 600ml;Minuman;3628;410;Tidak;Tidak
+01/09/2023;Baterai AA;Rumah Tangga;11568;103;Tidak;Ya
+01/09/2023;Bumbu Masak;Bahan Pokok;2395;126;Tidak;Ya
+01/09/2023;Coklat Batang;Cemilan;13805;398;Tidak;Tidak
+01/09/2023;Deterjen 1kg;Rumah Tangga;25573;153;Tidak;Ya
+01/09/2023;Es Krim;Makanan Beku;7824;272;Tidak;Tidak
+01/09/2023;Indomie Goreng;Makanan Instan;2972;227;Tidak;Tidak
+01/09/2023;Kecap Manis;Bahan Pokok;15513;127;Ya;Ya
+01/09/2023;Mie Cup;Makanan Instan;5102;424;Tidak;Tidak
+01/09/2023;Minyak Goreng 2L;Bahan Pokok;28563;99;Tidak;Ya
+01/09/2023;Nugget Ayam;Makanan Beku;49978;95;Tidak;Ya
+01/09/2023;Rokok Filter;Rokok;30646;31;Tidak;Ya
+01/09/2023;Sabun Mandi;Perawatan Diri;4503;143;Ya;Tidak
+01/09/2023;Shampo;Perawatan Diri;18297;107;Tidak;Ya
+01/09/2023;Susu UHT 1L;Minuman;18165;397;Ya;Tidak
+01/10/2023;Beras 5kg;Bahan Pokok;65186;246;Tidak;Ya
+01/10/2023;Bumbu Masak;Bahan Pokok;2598;434;Tidak;Tidak
+01/10/2023;Deodoran;Perawatan Diri;21968;316;Tidak;Tidak
+01/10/2023;Indomie Goreng;Makanan Instan;3140;398;Tidak;Tidak
+01/10/2023;Kecap Manis;Bahan Pokok;15575;201;Tidak;Tidak
+01/10/2023;Kopi Sachet;Minuman;1541;186;Tidak;Tidak
+01/10/2023;Mie Cup;Makanan Instan;4887;377;Ya;Tidak
+01/10/2023;Minyak Goreng 2L;Bahan Pokok;29899;93;Ya;Tidak
+01/10/2023;Nugget Ayam;Makanan Beku;46695;41;Tidak;Ya
+01/10/2023;Obat Flu;Kesehatan;11962;197;Tidak;Ya
+01/10/2023;Pasta Gigi;Perawatan Diri;8827;320;Tidak;Tidak
+01/10/2023;Rokok Filter;Rokok;31860;433;Tidak;Tidak
+01/10/2023;Shampo;Perawatan Diri;18889;41;Tidak;Ya
+01/10/2023;Sosis Kanzler;Makanan Beku;46611;433;Tidak;Tidak
+01/10/2023;Teh Celup;Minuman;8267;244;Tidak;Tidak
+01/10/2023;Tisu Wajah;Rumah Tangga;10081;767;Ya;Tidak
+01/10/2023;Yogurt;Minuman;9242;327;Tidak;Tidak
+01/11/2023;Air Mineral 600ml;Minuman;3407;183;Ya;Ya
+01/11/2023;Baterai AA;Rumah Tangga;12543;130;Ya;Tidak
+01/11/2023;Beras 5kg;Bahan Pokok;65881;390;Tidak;Tidak
+01/11/2023;Biskuit;Cemilan;11093;179;Tidak;Ya
+01/11/2023;Deodoran;Perawatan Diri;22914;327;Ya;Tidak
+01/11/2023;Deterjen 1kg;Rumah Tangga;23880;336;Tidak;Tidak
+01/11/2023;Es Krim;Makanan Beku;8201;50;Tidak;Ya
+01/11/2023;Indomie Goreng;Makanan Instan;2999;198;Tidak;Ya
+01/11/2023;Kecap Manis;Bahan Pokok;15604;448;Tidak;Tidak
+01/11/2023;Mie Cup;Makanan Instan;4901;572;Ya;Tidak
+01/11/2023;Nugget Ayam;Makanan Beku;47425;421;Tidak;Tidak
+01/11/2023;Obat Flu;Kesehatan;12594;173;Tidak;Tidak
+01/11/2023;Pasta Gigi;Perawatan Diri;9180;296;Tidak;Tidak
+01/11/2023;Popok Bayi;Bayi;52313;357;Tidak;Tidak
+01/11/2023;Rokok Filter;Rokok;31745;291;Tidak;Ya
+01/11/2023;Roti Tawar;Roti & Kue;15097;40;Tidak;Ya
+01/11/2023;Sabun Mandi;Perawatan Diri;4490;280;Tidak;Tidak
+01/11/2023;Saus Sambal;Bahan Pokok;7266;190;Tidak;Ya
+01/11/2023;Shampo;Perawatan Diri;19091;236;Tidak;Tidak
+01/11/2023;Susu UHT 1L;Minuman;17491;142;Tidak;Ya
+01/11/2023;Teh Celup;Minuman;7785;79;Ya;Ya
+01/11/2023;Telur 1kg;Bahan Pokok;29225;104;Tidak;Ya
+01/11/2023;Tisu Wajah;Rumah Tangga;9698;314;Tidak;Ya
+01/11/2023;Yogurt;Minuman;9100;105;Tidak;Ya
+01/12/2023;Beras 5kg;Bahan Pokok;63259;137;Tidak;Ya
+01/12/2023;Biskuit;Cemilan;10708;120;Tidak;Ya
+01/12/2023;Bumbu Masak;Bahan Pokok;2605;556;Ya;Tidak
+01/12/2023;Deodoran;Perawatan Diri;22960;535;Ya;Tidak
+01/12/2023;Deterjen 1kg;Rumah Tangga;25682;414;Tidak;Tidak
+01/12/2023;Kopi Sachet;Minuman;1550;547;Ya;Tidak
+01/12/2023;Pasta Gigi;Perawatan Diri;9328;363;Tidak;Tidak
+01/12/2023;Popok Bayi;Bayi;55796;326;Ya;Tidak
+01/12/2023;Rokok Filter;Rokok;31772;744;Ya;Tidak
+01/12/2023;Sabun Mandi;Perawatan Diri;4672;287;Tidak;Tidak
+01/12/2023;Shampo;Perawatan Diri;19089;319;Tidak;Tidak
+01/12/2023;Sosis Kanzler;Makanan Beku;46277;137;Tidak;Ya
+01/12/2023;Susu UHT 1L;Minuman;17264;63;Tidak;Ya
+01/12/2023;Teh Celup;Minuman;7701;107;Ya;Tidak
+01/12/2023;Telur 1kg;Bahan Pokok;28588;84;Ya;Tidak
+01/12/2023;Yogurt;Minuman;9122;381;Tidak;Tidak
